@@ -12,6 +12,7 @@ import {
   BookOpen,
   BookMarked,
   FileText,
+  MessageCircle,
   Bot,
   Library,
   User,
@@ -37,6 +38,7 @@ const navSections = [
       { href: '/flashcards', label: 'Fiszki', icon: Layers, desc: 'Powtorki z algorytmem SRS' },
       { href: '/quiz', label: 'Quiz', icon: Brain, desc: 'Sprawdz swoja wiedze' },
       { href: '/reading', label: 'Czytanki', icon: FileText, desc: 'Artykuly z tlumaczeniem' },
+      { href: '/phrases', label: 'Zdania', icon: MessageCircle, desc: 'Gotowe zwroty na kazda sytuacje' },
     ],
   },
   {
