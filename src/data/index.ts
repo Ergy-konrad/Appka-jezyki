@@ -1,8 +1,10 @@
 import { VocabularyItem, Language } from '@/types'
 import { englishB2 } from './english-b2'
 import { englishB2Extra } from './english-b2-extra'
+import { englishB2Extra2 } from './english-b2-extra2'
 import { spanishA1 } from './spanish-a1'
 import { spanishA1Extra } from './spanish-a1-extra'
+import { spanishA1Extra2 } from './spanish-a1-extra2'
 import { categories, getCategoriesByLanguage, getCategoryById } from './categories'
 
 export { categories, getCategoriesByLanguage, getCategoryById }
@@ -10,8 +12,10 @@ export { categories, getCategoriesByLanguage, getCategoryById }
 export const allVocabulary: VocabularyItem[] = [
   ...englishB2,
   ...englishB2Extra,
+  ...englishB2Extra2,
   ...spanishA1,
   ...spanishA1Extra,
+  ...spanishA1Extra2,
 ]
 
 export function getVocabularyByLanguage(language: Language): VocabularyItem[] {

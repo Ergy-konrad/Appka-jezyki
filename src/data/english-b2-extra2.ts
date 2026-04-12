@@ -1,0 +1,69 @@
+import { VocabularyItem } from '@/types'
+
+export const englishB2Extra2: VocabularyItem[] = [
+  // ─── Everyday Conversation ───
+  { id: 'en-161', language: 'en', word: 'actually', translation: 'właściwie / tak naprawdę', category: 'en-academic', difficulty: 2, emoji: '☝️', exampleSentence: 'Actually, I changed my mind about the restaurant.', exampleTranslation: 'Właściwie zmieniłem zdanie co do restauracji.' },
+  { id: 'en-162', language: 'en', word: 'apparently', translation: 'najwyraźniej / podobno', category: 'en-academic', difficulty: 3, emoji: '🤷', exampleSentence: 'Apparently, the meeting has been postponed.', exampleTranslation: 'Najwyraźniej spotkanie zostało przełożone.' },
+  { id: 'en-163', language: 'en', word: 'eventually', translation: 'w końcu / ostatecznie', category: 'en-academic', difficulty: 2, emoji: '⏰', exampleSentence: 'We eventually found the restaurant after getting lost twice.', exampleTranslation: 'W końcu znaleźliśmy restaurację po dwukrotnym zgubieniu się.' },
+  { id: 'en-164', language: 'en', word: 'awkward', translation: 'niezręczny / krępujący', category: 'en-emotions', difficulty: 2, emoji: '😬', exampleSentence: 'There was an awkward silence after his joke.', exampleTranslation: 'Po jego dowcipie nastała niezręczna cisza.' },
+  { id: 'en-165', language: 'en', word: 'genuine', translation: 'prawdziwy / szczery', category: 'en-emotions', difficulty: 3, emoji: '💎', exampleSentence: 'She gave me a genuine smile.', exampleTranslation: 'Obdarzyła mnie szczerym uśmiechem.' },
+  { id: 'en-166', language: 'en', word: 'subtle', translation: 'subtelny / delikatny', category: 'en-emotions', difficulty: 3, emoji: '🎨', exampleSentence: 'There\'s a subtle difference between the two words.', exampleTranslation: 'Jest subtelna różnica między tymi dwoma słowami.' },
+  { id: 'en-167', language: 'en', word: 'obviously', translation: 'oczywiście / najwyraźniej', category: 'en-academic', difficulty: 2, emoji: '👀', exampleSentence: 'Obviously, we need to prepare better next time.', exampleTranslation: 'Oczywiście musimy się lepiej przygotować następnym razem.' },
+  { id: 'en-168', language: 'en', word: 'definitely', translation: 'zdecydowanie / na pewno', category: 'en-academic', difficulty: 2, emoji: '✅', exampleSentence: 'I\'ll definitely come to your party.', exampleTranslation: 'Na pewno przyjdę na twoją imprezę.' },
+  { id: 'en-169', language: 'en', word: 'slightly', translation: 'nieco / lekko', category: 'en-academic', difficulty: 2, emoji: '📐', exampleSentence: 'The price is slightly higher than expected.', exampleTranslation: 'Cena jest nieco wyższa niż oczekiwano.' },
+  { id: 'en-170', language: 'en', word: 'properly', translation: 'prawidłowo / porządnie', category: 'en-academic', difficulty: 2, emoji: '✔️', exampleSentence: 'Make sure to close the door properly.', exampleTranslation: 'Upewnij się, że porządnie zamkniesz drzwi.' },
+
+  // ─── Work/Meeting Language ───
+  { id: 'en-171', language: 'en', word: 'to postpone', translation: 'przełożyć / odroczyć', category: 'en-business', difficulty: 3, emoji: '📅', exampleSentence: 'We had to postpone the meeting until next week.', exampleTranslation: 'Musieliśmy przełożyć spotkanie na przyszły tydzień.' },
+  { id: 'en-172', language: 'en', word: 'to follow up', translation: 'sprawdzić postępy / dopilnować', category: 'en-business', difficulty: 3, emoji: '📧', exampleSentence: 'I\'ll follow up with the client on Monday.', exampleTranslation: 'Skontaktuję się z klientem w poniedziałek.' },
+  { id: 'en-173', language: 'en', word: 'feedback', translation: 'informacja zwrotna', category: 'en-business', difficulty: 2, emoji: '💬', exampleSentence: 'Can you give me some feedback on my presentation?', exampleTranslation: 'Możesz mi dać informację zwrotną o mojej prezentacji?' },
+  { id: 'en-174', language: 'en', word: 'to recap', translation: 'podsumować', category: 'en-business', difficulty: 3, emoji: '📋', exampleSentence: 'Let me recap what we discussed today.', exampleTranslation: 'Pozwólcie, że podsumuję co dziś omawialiśmy.' },
+  { id: 'en-175', language: 'en', word: 'workload', translation: 'obciążenie pracą', category: 'en-business', difficulty: 3, emoji: '📊', exampleSentence: 'My workload has doubled since last month.', exampleTranslation: 'Moje obciążenie pracą podwoiło się od zeszłego miesiąca.' },
+  { id: 'en-176', language: 'en', word: 'overtime', translation: 'nadgodziny', category: 'en-business', difficulty: 2, emoji: '🕐', exampleSentence: 'I worked overtime to finish the project.', exampleTranslation: 'Pracowałem w nadgodzinach, żeby skończyć projekt.' },
+  { id: 'en-177', language: 'en', word: 'promotion', translation: 'awans', category: 'en-business', difficulty: 2, emoji: '📈', exampleSentence: 'She got a promotion to senior manager.', exampleTranslation: 'Dostała awans na starszego managera.' },
+  { id: 'en-178', language: 'en', word: 'to resign', translation: 'zrezygnować / złożyć wypowiedzenie', category: 'en-business', difficulty: 3, emoji: '📝', exampleSentence: 'He resigned from his position last week.', exampleTranslation: 'W zeszłym tygodniu zrezygnował ze stanowiska.' },
+
+  // ─── Finance ───
+  { id: 'en-179', language: 'en', word: 'mortgage', translation: 'kredyt hipoteczny', category: 'en-business', difficulty: 3, emoji: '🏠', exampleSentence: 'We\'re paying off our mortgage over 25 years.', exampleTranslation: 'Spłacamy kredyt hipoteczny przez 25 lat.' },
+  { id: 'en-180', language: 'en', word: 'to afford', translation: 'pozwolić sobie na', category: 'en-business', difficulty: 2, emoji: '💰', exampleSentence: 'I can\'t afford a new car right now.', exampleTranslation: 'Nie mogę sobie teraz pozwolić na nowy samochód.' },
+  { id: 'en-181', language: 'en', word: 'debt', translation: 'dług', category: 'en-business', difficulty: 2, emoji: '💳', exampleSentence: 'He\'s trying to pay off his student debt.', exampleTranslation: 'Próbuje spłacić dług studencki.' },
+  { id: 'en-182', language: 'en', word: 'savings', translation: 'oszczędności', category: 'en-business', difficulty: 2, emoji: '🐖', exampleSentence: 'I keep my savings in a separate account.', exampleTranslation: 'Trzymam oszczędności na osobnym koncie.' },
+  { id: 'en-183', language: 'en', word: 'budget', translation: 'budżet', category: 'en-business', difficulty: 2, emoji: '📒', exampleSentence: 'We need to stay within budget this quarter.', exampleTranslation: 'Musimy utrzymać się w budżecie w tym kwartale.' },
+
+  // ─── Technology Everyday ───
+  { id: 'en-184', language: 'en', word: 'notification', translation: 'powiadomienie', category: 'en-data', difficulty: 2, emoji: '🔔', exampleSentence: 'I turned off all notifications on my phone.', exampleTranslation: 'Wyłączyłem wszystkie powiadomienia na telefonie.' },
+  { id: 'en-185', language: 'en', word: 'to update', translation: 'aktualizować', category: 'en-data', difficulty: 2, emoji: '🔄', exampleSentence: 'Please update the app to the latest version.', exampleTranslation: 'Zaktualizuj aplikację do najnowszej wersji.' },
+  { id: 'en-186', language: 'en', word: 'storage', translation: 'pamięć / miejsce na dane', category: 'en-data', difficulty: 2, emoji: '💾', exampleSentence: 'My phone is running out of storage.', exampleTranslation: 'Kończy mi się miejsce na telefonie.' },
+  { id: 'en-187', language: 'en', word: 'device', translation: 'urządzenie', category: 'en-data', difficulty: 2, emoji: '📱', exampleSentence: 'This app works on any device.', exampleTranslation: 'Ta aplikacja działa na każdym urządzeniu.' },
+  { id: 'en-188', language: 'en', word: 'wireless', translation: 'bezprzewodowy', category: 'en-data', difficulty: 2, emoji: '📡', exampleSentence: 'Do you have wireless headphones?', exampleTranslation: 'Masz bezprzewodowe słuchawki?' },
+
+  // ─── Environment ───
+  { id: 'en-189', language: 'en', word: 'carbon footprint', translation: 'ślad węglowy', category: 'en-oze', difficulty: 3, emoji: '👣', exampleSentence: 'Flying has a huge carbon footprint.', exampleTranslation: 'Latanie ma ogromny ślad węglowy.' },
+  { id: 'en-190', language: 'en', word: 'sustainable', translation: 'zrównoważony', category: 'en-oze', difficulty: 3, emoji: '♻️', exampleSentence: 'We need more sustainable energy solutions.', exampleTranslation: 'Potrzebujemy bardziej zrównoważonych rozwiązań energetycznych.' },
+  { id: 'en-191', language: 'en', word: 'to recycle', translation: 'recyklingować / przetwarzać', category: 'en-oze', difficulty: 2, emoji: '♻️', exampleSentence: 'Remember to recycle your plastic bottles.', exampleTranslation: 'Pamiętaj o recyklingu plastikowych butelek.' },
+  { id: 'en-192', language: 'en', word: 'drought', translation: 'susza', category: 'en-oze', difficulty: 3, emoji: '🏜️', exampleSentence: 'The drought destroyed most of the crops.', exampleTranslation: 'Susza zniszczyła większość plonów.' },
+  { id: 'en-193', language: 'en', word: 'greenhouse effect', translation: 'efekt cieplarniany', category: 'en-oze', difficulty: 3, emoji: '🌡️', exampleSentence: 'CO2 emissions contribute to the greenhouse effect.', exampleTranslation: 'Emisje CO2 przyczyniają się do efektu cieplarnianego.' },
+
+  // ─── More Phrasal Verbs ───
+  { id: 'en-194', language: 'en', word: 'slow down', translation: 'zwolnić', category: 'en-phrasal', difficulty: 2, emoji: '🐢', exampleSentence: 'You need to slow down — you\'re working too hard.', exampleTranslation: 'Musisz zwolnić — za dużo pracujesz.' },
+  { id: 'en-195', language: 'en', word: 'sort out', translation: 'rozwiązać / uporządkować', category: 'en-phrasal', difficulty: 3, emoji: '🗂️', exampleSentence: 'We need to sort out this problem before Friday.', exampleTranslation: 'Musimy rozwiązać ten problem przed piątkiem.' },
+  { id: 'en-196', language: 'en', word: 'cut down on', translation: 'ograniczyć', category: 'en-phrasal', difficulty: 3, emoji: '✂️', exampleSentence: 'I\'m trying to cut down on sugar.', exampleTranslation: 'Próbuję ograniczyć cukier.' },
+  { id: 'en-197', language: 'en', word: 'put up with', translation: 'znosić / tolerować', category: 'en-phrasal', difficulty: 3, emoji: '😤', exampleSentence: 'I can\'t put up with this noise anymore.', exampleTranslation: 'Nie mogę dłużej znosić tego hałasu.' },
+  { id: 'en-198', language: 'en', word: 'get over', translation: 'pogodzić się z / wyzdrowieć z', category: 'en-phrasal', difficulty: 2, emoji: '💪', exampleSentence: 'It took me months to get over the breakup.', exampleTranslation: 'Pogodzenie się z rozstaniem zajęło mi miesiące.' },
+  { id: 'en-199', language: 'en', word: 'stand out', translation: 'wyróżniać się', category: 'en-phrasal', difficulty: 2, emoji: '⭐', exampleSentence: 'Her CV really stood out from the rest.', exampleTranslation: 'Jej CV naprawdę wyróżniało się na tle reszty.' },
+
+  // ─── More Idioms ───
+  { id: 'en-200', language: 'en', word: 'get cold feet', translation: 'dostać pietra / stchórzyć', category: 'en-idioms', difficulty: 3, emoji: '🥶', exampleSentence: 'He got cold feet before his wedding.', exampleTranslation: 'Dostał pietra przed ślubem.' },
+  { id: 'en-201', language: 'en', word: 'the elephant in the room', translation: 'temat tabu / oczywisty problem', category: 'en-idioms', difficulty: 4, emoji: '🐘', exampleSentence: 'Nobody wants to talk about the elephant in the room.', exampleTranslation: 'Nikt nie chce rozmawiać o tym oczywistym problemie.' },
+  { id: 'en-202', language: 'en', word: 'in the same boat', translation: 'w tej samej sytuacji', category: 'en-idioms', difficulty: 2, emoji: '⛵', exampleSentence: 'Don\'t worry, we\'re all in the same boat.', exampleTranslation: 'Nie martw się, wszyscy jesteśmy w tej samej sytuacji.' },
+  { id: 'en-203', language: 'en', word: 'keep your chin up', translation: 'głowa do góry', category: 'en-idioms', difficulty: 2, emoji: '😊', exampleSentence: 'Keep your chin up — things will get better.', exampleTranslation: 'Głowa do góry — będzie lepiej.' },
+  { id: 'en-204', language: 'en', word: 'go the extra mile', translation: 'dać z siebie więcej / postarać się extra', category: 'en-idioms', difficulty: 3, emoji: '🏃', exampleSentence: 'She always goes the extra mile for her clients.', exampleTranslation: 'Zawsze daje z siebie więcej dla swoich klientów.' },
+  { id: 'en-205', language: 'en', word: 'call it a day', translation: 'kończyć na dziś', category: 'en-idioms', difficulty: 2, emoji: '🌅', exampleSentence: 'It\'s late, let\'s call it a day.', exampleTranslation: 'Jest późno, kończmy na dziś.' },
+
+  // ─── Social / Relationships ───
+  { id: 'en-206', language: 'en', word: 'acquaintance', translation: 'znajomy (nie bliski)', category: 'en-emotions', difficulty: 3, emoji: '🤝', exampleSentence: 'He\'s not a friend, more of an acquaintance.', exampleTranslation: 'To nie jest przyjaciel, raczej znajomy.' },
+  { id: 'en-207', language: 'en', word: 'supportive', translation: 'wspierający', category: 'en-emotions', difficulty: 2, emoji: '🤗', exampleSentence: 'My family has always been very supportive.', exampleTranslation: 'Moja rodzina zawsze była bardzo wspierająca.' },
+  { id: 'en-208', language: 'en', word: 'boundaries', translation: 'granice (osobiste)', category: 'en-emotions', difficulty: 3, emoji: '🚧', exampleSentence: 'It\'s important to set healthy boundaries at work.', exampleTranslation: 'Ważne jest, żeby stawiać zdrowe granice w pracy.' },
+  { id: 'en-209', language: 'en', word: 'empathy', translation: 'empatia', category: 'en-emotions', difficulty: 3, emoji: '💗', exampleSentence: 'Good managers show empathy towards their team.', exampleTranslation: 'Dobrzy managerowie okazują empatię wobec zespołu.' },
+  { id: 'en-210', language: 'en', word: 'to break up', translation: 'zerwać (związek)', category: 'en-emotions', difficulty: 2, emoji: '💔', exampleSentence: 'They broke up after three years together.', exampleTranslation: 'Zerwali po trzech latach razem.' },
+]
