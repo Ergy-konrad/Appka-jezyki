@@ -11,6 +11,7 @@ import {
   Brain,
   BookOpen,
   BookMarked,
+  FileText,
   Bot,
   Library,
   User,
@@ -35,6 +36,7 @@ const navSections = [
     items: [
       { href: '/flashcards', label: 'Fiszki', icon: Layers, desc: 'Powtorki z algorytmem SRS' },
       { href: '/quiz', label: 'Quiz', icon: Brain, desc: 'Sprawdz swoja wiedze' },
+      { href: '/reading', label: 'Czytanki', icon: FileText, desc: 'Artykuly z tlumaczeniem' },
     ],
   },
   {
