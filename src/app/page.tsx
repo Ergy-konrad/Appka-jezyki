@@ -9,6 +9,8 @@ import {
   Volume2,
   Flame,
   BookOpen,
+  BookMarked,
+  Bot,
   ArrowRight,
   Sparkles,
 } from 'lucide-react'
@@ -25,6 +27,18 @@ const features = [
     title: 'Interaktywne quizy',
     desc: 'Rozne typy pytan, feedback w czasie rzeczywistym',
     color: 'from-cyan-500 to-blue-600',
+  },
+  {
+    icon: Bot,
+    title: 'AI Tutor',
+    desc: 'Osobisty nauczyciel AI - rozmowy, gramatyka, cwiczenia',
+    color: 'from-purple-500 to-pink-600',
+  },
+  {
+    icon: BookMarked,
+    title: 'Darmowy slownik',
+    desc: 'Definicje, wymowa, przyklady i synonimy - zero kosztow',
+    color: 'from-amber-500 to-orange-600',
   },
   {
     icon: Volume2,
@@ -127,7 +141,7 @@ export default function LandingPage() {
             <span className="text-3xl">🇬🇧</span>
             <div className="text-left">
               <p className="font-bold text-white">Angielski</p>
-              <p className="text-xs text-slate-400">Poziom B2 - 50 slow</p>
+              <p className="text-xs text-slate-400">Poziom B2 - 110 slow + OZE</p>
             </div>
           </div>
           <div className="glass rounded-2xl px-6 py-3 flex items-center gap-3">
@@ -151,7 +165,7 @@ export default function LandingPage() {
           Wszystko, czego potrzebujesz
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}

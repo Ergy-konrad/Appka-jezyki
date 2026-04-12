@@ -3,6 +3,22 @@ import { Category } from '@/types'
 export const categories: Category[] = [
   // English B2
   {
+    id: 'en-oze',
+    name: 'Renewable Energy & Asset Mgmt',
+    namePl: 'OZE i Asset Management',
+    emoji: '⚡',
+    language: 'en',
+    description: 'Odnawialne źródła energii, zarządzanie aktywami technicznymi',
+  },
+  {
+    id: 'en-data',
+    name: 'Data & Management',
+    namePl: 'Dane i Zarządzanie',
+    emoji: '📊',
+    language: 'en',
+    description: 'Analityka danych, koordynacja zespołu, leadership',
+  },
+  {
     id: 'en-business',
     name: 'Business & Work',
     namePl: 'Biznes i Praca',

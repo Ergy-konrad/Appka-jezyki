@@ -8,6 +8,8 @@ import {
   Layers,
   Brain,
   BookOpen,
+  BookMarked,
+  Bot,
   Menu,
   X,
   Flame,
@@ -21,6 +23,8 @@ const navItems = [
   { href: '/flashcards', label: 'Fiszki', icon: Layers },
   { href: '/quiz', label: 'Quiz', icon: Brain },
   { href: '/vocabulary', label: 'Slownictwo', icon: BookOpen },
+  { href: '/dictionary', label: 'Slownik', icon: BookMarked },
+  { href: '/tutor', label: 'AI Tutor', icon: Bot },
 ]
 
 export default function Sidebar() {
