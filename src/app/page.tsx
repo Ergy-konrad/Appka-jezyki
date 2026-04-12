@@ -82,7 +82,7 @@ export default function LandingPage() {
           <span className="text-xl font-bold gradient-text">LinguaApp</span>
         </div>
         <Link
-          href="/dashboard"
+          href="/login"
           className="px-5 py-2.5 rounded-xl glass text-sm font-medium text-slate-300 hover:text-white transition-colors"
         >
           Zaloguj sie
@@ -141,14 +141,14 @@ export default function LandingPage() {
             <span className="text-3xl">🇬🇧</span>
             <div className="text-left">
               <p className="font-bold text-white">Angielski</p>
-              <p className="text-xs text-slate-400">Poziom B2 - 110 slow + OZE</p>
+              <p className="text-xs text-slate-400">Poziom B2 - 160 slow + OZE</p>
             </div>
           </div>
           <div className="glass rounded-2xl px-6 py-3 flex items-center gap-3">
             <span className="text-3xl">🇪🇸</span>
             <div className="text-left">
               <p className="font-bold text-white">Hiszpanski</p>
-              <p className="text-xs text-slate-400">Od zera - 60 slow</p>
+              <p className="text-xs text-slate-400">Od zera - 150 slow</p>
             </div>
           </div>
         </motion.div>
