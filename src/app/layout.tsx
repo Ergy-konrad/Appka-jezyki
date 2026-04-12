@@ -1,9 +1,26 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: 'LinguaApp - Ucz sie jezykow',
-  description: 'Aplikacja do nauki angielskiego i hiszpanskiego z fiszkami, quizami i algorytmem powtórek',
+  description: 'Angielski B2 + Hiszpanski od zera. Fiszki, quizy, AI tutor, spaced repetition.',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'LinguaApp',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
+  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#0a0a1a',
 }
 
 export default function RootLayout({
@@ -13,6 +30,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl">
+      <head>
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.svg" />
+      </head>
       <body className="font-sans antialiased">
         {children}
       </body>

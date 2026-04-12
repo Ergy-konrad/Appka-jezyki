@@ -72,4 +72,52 @@ export const spanishA1: VocabularyItem[] = [
   { id: 'es-058', language: 'es', word: 'calle', translation: 'ulica', category: 'es-travel', difficulty: 1, emoji: '🛣️', exampleSentence: '¿En qué calle vives?', exampleTranslation: 'Na jakiej ulicy mieszkasz?' },
   { id: 'es-059', language: 'es', word: 'mapa', translation: 'mapa', category: 'es-travel', difficulty: 1, emoji: '🗺️', exampleSentence: '¿Tienes un mapa de la ciudad?', exampleTranslation: 'Czy masz mapę miasta?' },
   { id: 'es-060', language: 'es', word: 'habitación', translation: 'pokój', category: 'es-travel', difficulty: 2, emoji: '🚪', exampleSentence: 'Quiero una habitación doble.', exampleTranslation: 'Chcę pokój dwuosobowy.' },
+
+  // ─── Codzienne zwroty (continued) ───
+  { id: 'es-061', language: 'es', word: 'Necesito ayuda', translation: 'Potrzebuję pomocy', category: 'es-daily', difficulty: 1, emoji: '🆘', exampleSentence: 'Necesito ayuda, estoy perdido.', exampleTranslation: 'Potrzebuję pomocy, jestem zgubiony.' },
+  { id: 'es-062', language: 'es', word: '¿Hablas inglés?', translation: 'Czy mówisz po angielsku?', category: 'es-daily', difficulty: 1, emoji: '🗣️', exampleSentence: 'Perdona, ¿hablas inglés?', exampleTranslation: 'Przepraszam, czy mówisz po angielsku?' },
+  { id: 'es-063', language: 'es', word: 'trabajo', translation: 'praca', category: 'es-daily', difficulty: 1, emoji: '💼', exampleSentence: 'Voy al trabajo en metro.', exampleTranslation: 'Jadę do pracy metrem.' },
+  { id: 'es-064', language: 'es', word: 'dinero', translation: 'pieniądze', category: 'es-daily', difficulty: 1, emoji: '💵', exampleSentence: 'No tengo dinero en efectivo.', exampleTranslation: 'Nie mam gotówki.' },
+  { id: 'es-065', language: 'es', word: 'tiempo', translation: 'czas / pogoda', category: 'es-daily', difficulty: 1, emoji: '⏳', exampleSentence: 'No tengo tiempo ahora.', exampleTranslation: 'Nie mam teraz czasu.' },
+  { id: 'es-066', language: 'es', word: '¿Qué hora es?', translation: 'Która godzina?', category: 'es-daily', difficulty: 1, emoji: '🕐', exampleSentence: 'Perdona, ¿qué hora es?', exampleTranslation: 'Przepraszam, która godzina?' },
+  { id: 'es-067', language: 'es', word: 'Estoy bien', translation: 'Czuję się dobrze', category: 'es-daily', difficulty: 1, emoji: '😊', exampleSentence: '—¿Cómo estás? —Estoy bien, gracias.', exampleTranslation: '—Jak się masz? —Czuję się dobrze, dziękuję.' },
+  { id: 'es-068', language: 'es', word: 'también', translation: 'też / również', category: 'es-daily', difficulty: 1, emoji: '➕', exampleSentence: 'Yo también quiero ir.', exampleTranslation: 'Ja też chcę iść.' },
+  { id: 'es-069', language: 'es', word: 'pero', translation: 'ale', category: 'es-daily', difficulty: 1, emoji: '🔄', exampleSentence: 'Me gusta, pero es caro.', exampleTranslation: 'Podoba mi się, ale jest drogi.' },
+  { id: 'es-070', language: 'es', word: 'porque', translation: 'ponieważ / bo', category: 'es-daily', difficulty: 1, emoji: '💭', exampleSentence: 'Estudio español porque me gusta.', exampleTranslation: 'Uczę się hiszpańskiego, bo mi się podoba.' },
+
+  // ─── Czasowniki podstawowe ───
+  { id: 'es-071', language: 'es', word: 'ser', translation: 'być (na stałe)', category: 'es-daily', difficulty: 2, emoji: '🔵', exampleSentence: 'Soy de Polonia.', exampleTranslation: 'Jestem z Polski.' },
+  { id: 'es-072', language: 'es', word: 'estar', translation: 'być (tymczasowo)', category: 'es-daily', difficulty: 2, emoji: '🟢', exampleSentence: 'Estoy en Barcelona.', exampleTranslation: 'Jestem w Barcelonie.' },
+  { id: 'es-073', language: 'es', word: 'tener', translation: 'mieć', category: 'es-daily', difficulty: 2, emoji: '✋', exampleSentence: 'Tengo dos hermanos.', exampleTranslation: 'Mam dwóch braci.' },
+  { id: 'es-074', language: 'es', word: 'querer', translation: 'chcieć', category: 'es-daily', difficulty: 2, emoji: '💚', exampleSentence: 'Quiero aprender español.', exampleTranslation: 'Chcę nauczyć się hiszpańskiego.' },
+  { id: 'es-075', language: 'es', word: 'poder', translation: 'móc', category: 'es-daily', difficulty: 2, emoji: '💪', exampleSentence: '¿Puedo pagar con tarjeta?', exampleTranslation: 'Czy mogę zapłacić kartą?' },
+  { id: 'es-076', language: 'es', word: 'ir', translation: 'iść / jechać', category: 'es-daily', difficulty: 2, emoji: '🚶', exampleSentence: 'Voy a la playa.', exampleTranslation: 'Idę na plażę.' },
+  { id: 'es-077', language: 'es', word: 'hablar', translation: 'mówić', category: 'es-daily', difficulty: 2, emoji: '🗣️', exampleSentence: 'Hablo un poco de español.', exampleTranslation: 'Mówię trochę po hiszpańsku.' },
+  { id: 'es-078', language: 'es', word: 'comer', translation: 'jeść', category: 'es-daily', difficulty: 1, emoji: '🍽️', exampleSentence: '¿Dónde vamos a comer?', exampleTranslation: 'Gdzie idziemy jeść?' },
+  { id: 'es-079', language: 'es', word: 'beber', translation: 'pić', category: 'es-daily', difficulty: 1, emoji: '🥤', exampleSentence: '¿Quieres beber algo?', exampleTranslation: 'Chcesz coś do picia?' },
+  { id: 'es-080', language: 'es', word: 'vivir', translation: 'mieszkać / żyć', category: 'es-family', difficulty: 2, emoji: '🏠', exampleSentence: 'Vivo en Varsovia.', exampleTranslation: 'Mieszkam w Warszawie.' },
+
+  // ─── Jedzenie (continued) ───
+  { id: 'es-081', language: 'es', word: 'arroz', translation: 'ryż', category: 'es-food', difficulty: 1, emoji: '🍚', exampleSentence: 'La paella tiene arroz y mariscos.', exampleTranslation: 'Paella ma ryż i owoce morza.' },
+  { id: 'es-082', language: 'es', word: 'pescado', translation: 'ryba', category: 'es-food', difficulty: 1, emoji: '🐟', exampleSentence: 'El pescado está muy fresco.', exampleTranslation: 'Ryba jest bardzo świeża.' },
+  { id: 'es-083', language: 'es', word: 'fruta', translation: 'owoc', category: 'es-food', difficulty: 1, emoji: '🍎', exampleSentence: 'Me gusta comer fruta por la mañana.', exampleTranslation: 'Lubię jeść owoce rano.' },
+  { id: 'es-084', language: 'es', word: 'leche', translation: 'mleko', category: 'es-food', difficulty: 1, emoji: '🥛', exampleSentence: 'Un café con leche, por favor.', exampleTranslation: 'Kawę z mlekiem, proszę.' },
+  { id: 'es-085', language: 'es', word: 'queso', translation: 'ser', category: 'es-food', difficulty: 1, emoji: '🧀', exampleSentence: 'El queso manchego es delicioso.', exampleTranslation: 'Ser manchego jest pyszny.' },
+  { id: 'es-086', language: 'es', word: 'helado', translation: 'lody', category: 'es-food', difficulty: 1, emoji: '🍦', exampleSentence: '¿Quieres un helado de chocolate?', exampleTranslation: 'Chcesz lody czekoladowe?' },
+  { id: 'es-087', language: 'es', word: 'carne', translation: 'mięso', category: 'es-food', difficulty: 1, emoji: '🥩', exampleSentence: 'No como carne, soy vegetariano.', exampleTranslation: 'Nie jem mięsa, jestem wegetarianinem.' },
+  { id: 'es-088', language: 'es', word: 'ensalada', translation: 'sałatka', category: 'es-food', difficulty: 1, emoji: '🥗', exampleSentence: 'Una ensalada mixta, por favor.', exampleTranslation: 'Sałatkę mieszaną, proszę.' },
+  { id: 'es-089', language: 'es', word: 'propina', translation: 'napiwek', category: 'es-food', difficulty: 2, emoji: '💰', exampleSentence: '¿Dejamos propina?', exampleTranslation: 'Zostawiamy napiwek?' },
+  { id: 'es-090', language: 'es', word: 'reserva', translation: 'rezerwacja', category: 'es-food', difficulty: 2, emoji: '📋', exampleSentence: 'Tengo una reserva para dos personas.', exampleTranslation: 'Mam rezerwację na dwie osoby.' },
+
+  // ─── Podróże (continued) ───
+  { id: 'es-091', language: 'es', word: 'taxi', translation: 'taksówka', category: 'es-travel', difficulty: 1, emoji: '🚕', exampleSentence: 'Necesito un taxi al aeropuerto.', exampleTranslation: 'Potrzebuję taksówki na lotnisko.' },
+  { id: 'es-092', language: 'es', word: 'autobús', translation: 'autobus', category: 'es-travel', difficulty: 1, emoji: '🚌', exampleSentence: '¿A qué hora sale el autobús?', exampleTranslation: 'O której odjeżdża autobus?' },
+  { id: 'es-093', language: 'es', word: 'cerca', translation: 'blisko', category: 'es-travel', difficulty: 1, emoji: '📍', exampleSentence: 'El hotel está cerca de la playa.', exampleTranslation: 'Hotel jest blisko plaży.' },
+  { id: 'es-094', language: 'es', word: 'lejos', translation: 'daleko', category: 'es-travel', difficulty: 1, emoji: '🏔️', exampleSentence: '¿Está lejos de aquí?', exampleTranslation: 'Czy to daleko stąd?' },
+  { id: 'es-095', language: 'es', word: 'pasaporte', translation: 'paszport', category: 'es-travel', difficulty: 1, emoji: '📕', exampleSentence: '¿Dónde está mi pasaporte?', exampleTranslation: 'Gdzie jest mój paszport?' },
+  { id: 'es-096', language: 'es', word: 'farmacia', translation: 'apteka', category: 'es-travel', difficulty: 1, emoji: '💊', exampleSentence: '¿Hay una farmacia cerca?', exampleTranslation: 'Czy jest tu gdzieś apteka?' },
+  { id: 'es-097', language: 'es', word: 'supermercado', translation: 'supermarket', category: 'es-travel', difficulty: 1, emoji: '🛒', exampleSentence: 'Voy al supermercado a comprar agua.', exampleTranslation: 'Idę do supermarketu kupić wodę.' },
+  { id: 'es-098', language: 'es', word: 'hospital', translation: 'szpital', category: 'es-travel', difficulty: 1, emoji: '🏥', exampleSentence: '¿Dónde está el hospital más cercano?', exampleTranslation: 'Gdzie jest najbliższy szpital?' },
+  { id: 'es-099', language: 'es', word: 'todo recto', translation: 'prosto', category: 'es-travel', difficulty: 2, emoji: '⬆️', exampleSentence: 'Siga todo recto y luego gire a la derecha.', exampleTranslation: 'Proszę iść prosto, a potem skręcić w prawo.' },
+  { id: 'es-100', language: 'es', word: 'wifi', translation: 'wifi', category: 'es-travel', difficulty: 1, emoji: '📶', exampleSentence: '¿Cuál es la contraseña del wifi?', exampleTranslation: 'Jakie jest hasło do wifi?' },
 ]
