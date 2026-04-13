@@ -79,7 +79,7 @@ export default function ListeningExercise({
     <div className="w-full max-w-lg mx-auto">
       {/* Audio player */}
       <div className="glass rounded-2xl p-8 glow mb-6 text-center">
-        <p className="text-sm text-slate-400 mb-4">Posluchaj i wpisz co slyszysz:</p>
+        <p className="text-sm text-slate-400 mb-4">Posłuchaj i wpisz co słyszysz:</p>
 
         <div className="flex items-center justify-center gap-4">
           <button
@@ -100,7 +100,7 @@ export default function ListeningExercise({
               }
             }}
             className="w-14 h-14 rounded-xl glass flex items-center justify-center hover:bg-white/10 transition-colors"
-            title="Odtworz wolniej"
+            title="Odtwórz wolniej"
           >
             <RotateCcw size={20} className="text-slate-400" />
             <span className="text-xs text-slate-500 ml-1">x0.5</span>
@@ -122,7 +122,7 @@ export default function ListeningExercise({
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Wpisz co slyszysz..."
+            placeholder="Wpisz co słyszysz..."
             autoComplete="off"
             autoCapitalize="off"
             className={cn(
@@ -155,7 +155,7 @@ export default function ListeningExercise({
 
         {result === 'wrong' && !showAnswer && (
           <p className="text-center text-sm text-red-400 mt-2">
-            Nie do konca. Posuchaj jeszcze raz i sprobuj! ({3 - attempts} proby)
+            Nie do końca. Posłuchaj jeszcze raz i spróbuj! ({3 - attempts} proby)
           </p>
         )}
 

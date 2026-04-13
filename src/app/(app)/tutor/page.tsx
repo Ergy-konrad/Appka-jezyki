@@ -12,10 +12,10 @@ interface Message {
 
 const QUICK_PROMPTS = [
   { icon: MessageCircle, label: 'Rozmowa po angielsku', prompt: 'Zacznijmy prostą rozmowę po angielsku na poziomie B2. Ty zaczynasz!' },
-  { icon: MessageCircle, label: 'Rozmowa po hiszpansku', prompt: 'Zacznijmy prostą rozmowę po hiszpańsku. Jestem kompletnym początkującym - używaj prostych słów i tłumacz je na polski.' },
-  { icon: Lightbulb, label: 'Wyjasnij gramatyke', prompt: 'Wyjaśnij mi różnicę między Present Perfect a Past Simple po angielsku. Podaj przykłady.' },
-  { icon: BookOpen, label: 'Hiszpanski od zera', prompt: 'Naucz mnie podstawowych zwrotów po hiszpańsku, których potrzebuję na wakacjach. Zacznij od najważniejszych.' },
-  { icon: Sparkles, label: 'Wygeneruj cwiczenia', prompt: 'Wygeneruj 5 ćwiczeń z angielskich phrasal verbs na poziomie B2. Daj zdania do uzupełnienia.' },
+  { icon: MessageCircle, label: 'Rozmowa po hiszpańsku', prompt: 'Zacznijmy prostą rozmowę po hiszpańsku. Jestem kompletnym początkującym - używaj prostych słów i tłumacz je na polski.' },
+  { icon: Lightbulb, label: 'Wyjaśnij gramatykę', prompt: 'Wyjaśnij mi różnicę między Present Perfect a Past Simple po angielsku. Podaj przykłady.' },
+  { icon: BookOpen, label: 'Hiszpański od zera', prompt: 'Naucz mnie podstawowych zwrotów po hiszpańsku, których potrzebuję na wakacjach. Zacznij od najważniejszych.' },
+  { icon: Sparkles, label: 'Wygeneruj ćwiczenia', prompt: 'Wygeneruj 5 ćwiczeń z angielskich phrasal verbs na poziomie B2. Daj zdania do uzupełnienia.' },
   { icon: Sparkles, label: 'Idiomy angielskie', prompt: 'Naucz mnie 5 popularnych angielskich idiomów, których mogę używać na co dzień. Wyjaśnij znaczenie i podaj przykłady.' },
 ]
 
@@ -56,14 +56,14 @@ export default function TutorPage() {
         if (res.status === 503) {
           setError(data.message || 'AI nie jest skonfigurowane. Dodaj GROQ_API_KEY.')
         } else {
-          setError('Blad AI. Sprobuj ponownie.')
+          setError('Błąd AI. Spróbuj ponownie.')
         }
         return
       }
 
       setMessages([...newMessages, { role: 'assistant', content: data.reply }])
     } catch {
-      setError('Brak polaczenia z serwerem.')
+      setError('Brak połączenia z serwerem.')
     } finally {
       setLoading(false)
     }
@@ -85,7 +85,7 @@ export default function TutorPage() {
           AI Tutor
         </h1>
         <p className="text-slate-400 mt-1">
-          Twoj osobisty nauczyciel AI - rozmowy, gramatyka, cwiczenia
+          Twój osobisty nauczyciel AI - rozmowy, gramatyka, ćwiczenia
         </p>
       </div>
 
@@ -104,11 +104,11 @@ export default function TutorPage() {
                   <Bot size={32} className="text-white" />
                 </div>
                 <h2 className="text-xl font-bold text-white mb-2">
-                  Czesc! Jestem Twoj AI Tutor
+                  Cześć! Jestem Twój AI Tutor
                 </h2>
                 <p className="text-slate-400 text-sm max-w-md">
-                  Moge uczyc angielskiego i hiszpanskiego, wyjasnic gramatyke,
-                  prowadzic konwersacje i generowac cwiczenia.
+                  Mogę uczyć angielskiego i hiszpańskiego, wyjaśnić gramatykę,
+                  prowadzić konwersacje i generować ćwiczenia.
                 </p>
               </motion.div>
 
@@ -194,8 +194,8 @@ export default function TutorPage() {
               <p className="text-slate-400">{error}</p>
               {error.includes('GROQ_API_KEY') && (
                 <div className="mt-2 text-xs text-slate-500 space-y-1">
-                  <p>Aby wlaczyc AI Tutora:</p>
-                  <p>1. Wejdz na console.groq.com i zaloz darmowe konto</p>
+                  <p>Aby włączyć AI Tutora:</p>
+                  <p>1. Wejdź na console.groq.com i załóż darmowe konto</p>
                   <p>2. Skopiuj API Key</p>
                   <p>3. Dodaj GROQ_API_KEY do zmiennych w Vercel</p>
                 </div>
@@ -214,7 +214,7 @@ export default function TutorPage() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Napisz wiadomosc... (Enter = wyslij, Shift+Enter = nowa linia)"
+              placeholder="Napisz wiadomość... (Enter = wyślij, Shift+Enter = nowa linia)"
               rows={1}
               className="flex-1 px-4 py-3 rounded-xl bg-slate-800/80 border border-white/5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 transition-colors resize-none"
             />

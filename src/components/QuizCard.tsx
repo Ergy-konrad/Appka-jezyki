@@ -68,7 +68,7 @@ export default function QuizCard({ question, onAnswer, questionNumber, totalQues
         className="glass rounded-2xl p-8 glow mb-6"
       >
         <p className="text-sm text-slate-400 mb-2">
-          {isTranslateMode ? 'Jak przetlumaczysz:' : 'Ktore slowo oznacza:'}
+          {isTranslateMode ? 'Jak przetłumaczysz:' : 'Które słowo oznacza:'}
         </p>
         <div className="flex items-center gap-3">
           <span className="text-4xl">{question.vocabularyItem.emoji}</span>

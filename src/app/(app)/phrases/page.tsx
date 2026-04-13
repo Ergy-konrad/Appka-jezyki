@@ -66,12 +66,12 @@ export default function PhrasesPage() {
           <button onClick={() => { setPracticeMode(false); setRevealedIds(new Set()) }}
             className={cn('px-4 py-2 rounded-xl text-sm font-medium transition-all',
               !practiceMode ? 'bg-brand-500/20 text-brand-300 border border-brand-500/30' : 'glass text-slate-400')}>
-            Przegladaj
+            Przeglądaj
           </button>
           <button onClick={() => { setPracticeMode(true); setRevealedIds(new Set()) }}
             className={cn('px-4 py-2 rounded-xl text-sm font-medium transition-all',
               practiceMode ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30' : 'glass text-slate-400')}>
-            Cwicz (ukryte tlumaczenie)
+            Ćwicz (ukryte tłumaczenie)
           </button>
         </div>
 
@@ -94,7 +94,7 @@ export default function PhrasesPage() {
                       {revealedIds.has(phrase.id) ? (
                         <span className="text-slate-400">{phrase.translation}</span>
                       ) : (
-                        'Pokaz tlumaczenie'
+                        'Pokaż tłumaczenie'
                       )}
                     </button>
                   ) : (
@@ -141,7 +141,7 @@ export default function PhrasesPage() {
           <h1 className="text-3xl font-bold text-white flex items-center gap-3">
             <MessageCircle className="text-pink-400" /> Zdania i zwroty
           </h1>
-          <p className="text-slate-400 mt-1">Gotowe zdania na kazda sytuacje - ucz sie calych zwrotow!</p>
+          <p className="text-slate-400 mt-1">Gotowe zdania na każdą sytuację - ucz się całych zwrotów!</p>
         </div>
         <LanguageSelector selected={language} onChange={(l) => { setLanguage(l); setSelectedCategory(null) }} />
       </div>
@@ -149,9 +149,9 @@ export default function PhrasesPage() {
       {/* Tip */}
       <div className="glass rounded-2xl p-5 border-l-4 border-pink-500">
         <p className="text-sm text-slate-300">
-          <strong className="text-pink-400">Dlaczego uczyc sie calych zdan?</strong> Mozg lepiej zapamietuje
-          slowa w kontekscie niz pojedynczo. Ucz sie zwrotow, nie slowek — bedziesz mowic naturalnie
-          od pierwszego dnia. Klikaj glosnik i powtarzaj na glos!
+          <strong className="text-pink-400">Dlaczego uczyć się całych zdań?</strong> Mózg lepiej zapamiętuje
+          słowa w kontekście niż pojedynczo. Ucz się zwrotów, nie słówek — będziesz mówić naturalnie
+          od pierwszego dnia. Klikaj głośnik i powtarzaj na głos!
         </p>
       </div>
 
@@ -175,7 +175,7 @@ export default function PhrasesPage() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm text-slate-500">{count} zwrotow</span>
+                <span className="text-sm text-slate-500">{count} zwrotów</span>
                 <ChevronRight size={18} className="text-slate-600 group-hover:text-brand-400 transition-colors" />
               </div>
             </motion.button>

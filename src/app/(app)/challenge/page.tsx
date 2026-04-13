@@ -113,7 +113,7 @@ export default function ChallengePage() {
           Wyzwanie dnia
         </h1>
         <p className="text-slate-400 mt-1">
-          10 roznorodnych cwiczen kazdego dnia - buduj serie i zdobywaj bonusy!
+          10 różnorodnych ćwiczeń każdego dnia - buduj serię i zdobywaj bonusy!
         </p>
       </div>
 
@@ -136,7 +136,7 @@ export default function ChallengePage() {
 
               {(stats?.currentStreak ?? 0) >= 3 && (
                 <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/20 text-orange-400 text-sm font-medium">
-                  <Zap size={14} /> Bonus za serie: +15 XP
+                  <Zap size={14} /> Bonus za serię: +15 XP
                 </div>
               )}
             </div>
@@ -148,13 +148,13 @@ export default function ChallengePage() {
                 Dzisiejsze wyzwanie
               </h3>
               <p className="text-sm text-slate-400 mb-4">
-                10 cwiczen: quiz, pisanie, sluchanie, zdania. Miks angielskiego i hiszpanskiego.
-                Idealna sesja na kazdy dzien - zajmie ok. 5 minut.
+                10 ćwiczeń: quiz, pisanie, słuchanie, zdania. Miks angielskiego i hiszpańskiego.
+                Idealna sesja na każdy dzień - zajmie ok. 5 minut.
               </p>
               <ul className="text-xs text-slate-500 space-y-1 mb-4">
-                <li>+10 XP za kazda poprawna odpowiedz</li>
-                <li>+25 XP bonus za bezbledna sesje</li>
-                <li>+15 XP bonus za serie 3+ dni</li>
+                <li>+10 XP za każdą poprawną odpowiedź</li>
+                <li>+25 XP bonus za bezbłędną sesję</li>
+                <li>+15 XP bonus za serię 3+ dni</li>
               </ul>
 
               <button
@@ -203,7 +203,7 @@ export default function ChallengePage() {
               <TypeAnswer
                 key={`chal-tr-${currentExercise.word.id}`}
                 prompt={currentExercise.word.word}
-                promptSubtitle="Wpisz polskie tlumaczenie"
+                promptSubtitle="Wpisz polskie tłumaczenie"
                 correctAnswer={currentExercise.word.translation}
                 emoji={currentExercise.word.emoji}
                 language={currentExercise.word.language}
@@ -215,7 +215,7 @@ export default function ChallengePage() {
               <TypeAnswer
                 key={`chal-word-${currentExercise.word.id}`}
                 prompt={currentExercise.word.translation}
-                promptSubtitle={`Wpisz po ${currentExercise.word.language === 'en' ? 'angielsku' : 'hiszpansku'}`}
+                promptSubtitle={`Wpisz po ${currentExercise.word.language === 'en' ? 'angielsku' : 'hiszpańsku'}`}
                 correctAnswer={currentExercise.word.word}
                 emoji={currentExercise.word.emoji}
                 onResult={handleResult}
@@ -262,7 +262,7 @@ export default function ChallengePage() {
             </motion.div>
 
             <h2 className="text-3xl font-bold text-white mb-2">
-              {accuracy === 100 ? 'Perfekcyjnie!' : accuracy >= 80 ? 'Swietnie!' : accuracy >= 50 ? 'Nieźle!' : 'Nie poddawaj sie!'}
+              {accuracy === 100 ? 'Perfekcyjnie!' : accuracy >= 80 ? 'Świetnie!' : accuracy >= 50 ? 'Nieźle!' : 'Nie poddawaj się!'}
             </h2>
 
             <div className="grid grid-cols-3 gap-3 mb-8 max-w-sm mx-auto mt-6">
@@ -285,7 +285,7 @@ export default function ChallengePage() {
                 Jeszcze raz
               </button>
               <button onClick={() => setState('intro')} className="px-6 py-3 rounded-xl glass text-slate-300 font-medium hover:bg-white/10 transition-colors">
-                Powrot
+                Powrót
               </button>
             </div>
           </motion.div>

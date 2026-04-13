@@ -107,7 +107,7 @@ export default function FlashcardsPage() {
             <Layers className="text-brand-400" />
             Fiszki
           </h1>
-          <p className="text-slate-400 mt-1">Ucz sie slow z algorytmem powtórek</p>
+          <p className="text-slate-400 mt-1">Ucz się słów z algorytmem powtórek</p>
         </div>
         {mode === 'select' && (
           <LanguageSelector selected={language} onChange={setLanguage} />
@@ -125,7 +125,7 @@ export default function FlashcardsPage() {
           >
             {/* Batch size selector */}
             <div className="glass rounded-2xl p-6">
-              <p className="text-sm text-slate-400 mb-3">Ile slow w sesji:</p>
+              <p className="text-sm text-slate-400 mb-3">Ile słów w sesji:</p>
               <div className="flex gap-2">
                 {[5, 10, 15, 20].map(size => (
                   <button
@@ -152,13 +152,13 @@ export default function FlashcardsPage() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center mb-4">
                   <RotateCcw size={28} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Powtorka</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Powtórka</h3>
                 <p className="text-slate-400 text-sm mb-4">
-                  Powtorz slowa, ktore zaczynasz zapominac
+                  Powtórz słowa, które zaczynasz zapominać
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-sm font-medium">
-                    {reviewCount} do powtorki
+                    {reviewCount} do powtórki
                   </span>
                   <ArrowRight size={16} className="text-slate-500 group-hover:text-orange-400 transition-colors" />
                 </div>
@@ -171,9 +171,9 @@ export default function FlashcardsPage() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-600 flex items-center justify-center mb-4">
                   <Layers size={28} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Nowe slowa</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Nowe słowa</h3>
                 <p className="text-slate-400 text-sm mb-4">
-                  Poznaj nowe slownictwo
+                  Poznaj nowe słownictwo
                 </p>
                 <div className="flex items-center gap-2">
                   <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-medium">
@@ -216,8 +216,8 @@ export default function FlashcardsPage() {
             >
               <Trophy size={64} className="text-yellow-400 mx-auto mb-4" />
             </motion.div>
-            <h2 className="text-3xl font-bold text-white mb-2">Sesja zakonczona!</h2>
-            <p className="text-slate-400 mb-8">Swietna robota! Oto Twoje wyniki:</p>
+            <h2 className="text-3xl font-bold text-white mb-2">Sesja zakończona!</h2>
+            <p className="text-slate-400 mb-8">Świetna robota! Oto Twoje wyniki:</p>
 
             <div className="grid grid-cols-3 gap-4 mb-8 max-w-md mx-auto">
               <div className="glass rounded-xl p-4">
@@ -245,7 +245,7 @@ export default function FlashcardsPage() {
                 onClick={() => setMode('select')}
                 className="px-6 py-3 rounded-xl glass text-slate-300 font-medium hover:bg-white/10 transition-colors"
               >
-                Powrot
+                Powrót
               </button>
             </div>
           </motion.div>

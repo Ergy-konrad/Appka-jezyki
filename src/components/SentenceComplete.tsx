@@ -86,7 +86,7 @@ export default function SentenceComplete({
       {/* Instruction */}
       <div className="glass rounded-2xl p-6 glow mb-6">
         <div className="flex items-center justify-between mb-3">
-          <p className="text-sm text-slate-400">Uzupelnij brakujace slowo:</p>
+          <p className="text-sm text-slate-400">Uzupełnij brakujące słowo:</p>
           <button
             onClick={() => speak(sentence)}
             className="p-2 rounded-lg bg-brand-500/20 text-brand-300 hover:bg-brand-500/30 transition-colors"
@@ -142,7 +142,7 @@ export default function SentenceComplete({
 
       {result === 'wrong' && !showAnswer && (
         <p className="text-center text-sm text-red-400 mb-4">
-          Nie to slowo. Sprobuj jeszcze! (zostalo prob: {3 - attempts})
+          Nie to słowo. Spróbuj jeszcze! (zostało prób: {3 - attempts})
         </p>
       )}
 
@@ -152,7 +152,7 @@ export default function SentenceComplete({
           animate={{ opacity: 1 }}
           className="text-center glass rounded-xl p-4 mb-4"
         >
-          <p className="text-sm text-slate-400">Poprawne slowo:</p>
+          <p className="text-sm text-slate-400">Poprawne słowo:</p>
           <p className="text-xl font-bold text-white">{missingWord}</p>
         </motion.div>
       )}

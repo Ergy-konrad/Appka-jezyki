@@ -16,16 +16,16 @@ import { allVocabulary } from '@/data'
 import { UserStats, DailyActivity, VocabularyItem } from '@/types'
 
 const LEARNING_TIPS = [
-  'Ucz sie codziennie po 10-15 min. Regularnosc > dlugie sesje raz na tydzien.',
-  'Mow na glos! Wymowa utrwala slowa 2x szybciej niz czytanie w glowie.',
-  'Sluchaj podcastow w trasie - BBC 6 Minute English, Coffee Break Spanish.',
-  'Pisanie od reki jest skuteczniejsze niz klikanie - uzywaj trybu Nauka!',
-  'Nie boj sie bledow. Kazdy blad = okazja do nauki. Bledy pamietamy najlepiej.',
-  'Naucz sie 5 slow dziennie = 1825 slow rocznie. To wystarczy na plynna rozmowe!',
-  'Ogladaj filmy z napisami EN/ES. Zacznij od znanych filmow.',
-  'Powtorki sa najwazniejsze! Nowe slowo bez powtorki = zapomniane w 48h.',
-  'Ucz sie slow w kontekscie (zdaniach), nie pojedynczo - latwiej zapamietasz.',
-  'Ustaw sobie staly czas nauki - np. 8 rano kawa + LinguaApp = nawyk.',
+  'Ucz się codziennie po 10-15 min. Regularność > długie sesje raz na tydzień.',
+  'Mów na głos! Wymowa utrwala słowa 2x szybciej niż czytanie w głowie.',
+  'Słuchaj podcastów w trasie - BBC 6 Minute English, Coffee Break Spanish.',
+  'Pisanie od ręki jest skuteczniejsze niż klikanie - używaj trybu Nauka!',
+  'Nie bój się błędów. Każdy błąd = okazja do nauki. Błędy pamiętamy najlepiej.',
+  'Naucz się 5 słów dziennie = 1825 słów rocznie. To wystarczy na płynną rozmowę!',
+  'Oglądaj filmy z napisami EN/ES. Zacznij od znanych filmów.',
+  'Powtórki są najważniejsze! Nowe słowo bez powtórki = zapomniane w 48h.',
+  'Ucz się słów w kontekście (zdaniach), nie pojedynczo - łatwiej zapamiętasz.',
+  'Ustaw sobie stały czas nauki - np. 8 rano kawa + LinguaApp = nawyk.',
 ]
 
 export default function DashboardPage() {
@@ -74,8 +74,8 @@ export default function DashboardPage() {
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }}>
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold text-white mb-1">Panel glowny</h1>
-            <p className="text-slate-400">Witaj z powrotem! Kontynuuj nauke.</p>
+            <h1 className="text-3xl font-bold text-white mb-1">Panel główny</h1>
+            <p className="text-slate-400">Witaj z powrotem! Kontynuuj naukę.</p>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-slate-500">
             {cloudSync ? (
@@ -97,8 +97,8 @@ export default function DashboardPage() {
           subtitle={`Poziom ${level}`} />
         <StatsCard label="Nauczone" value={learned} icon={BookOpen} color="bg-emerald-500/20"
           subtitle={`z ${totalWords}`} />
-        <StatsCard label="Do powtorki" value={toReview} icon={Target} color="bg-cyan-500/20"
-          subtitle={toReview > 0 ? 'Czas na powtorke!' : 'Na biezaco!'} />
+        <StatsCard label="Do powtórki" value={toReview} icon={Target} color="bg-cyan-500/20"
+          subtitle={toReview > 0 ? 'Czas na powtórkę!' : 'Na bieżąco!'} />
       </motion.div>
 
       {/* Word of the day + Tip */}
@@ -108,7 +108,7 @@ export default function DashboardPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}
             className="glass rounded-2xl p-5 border-l-4 border-brand-500"
           >
-            <p className="text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">Slowo dnia</p>
+            <p className="text-xs text-brand-400 font-semibold uppercase tracking-wider mb-2">Słowo dnia</p>
             <div className="flex items-center gap-3 mb-2">
               <span className="text-3xl">{wordOfDay.emoji}</span>
               <div>
@@ -183,7 +183,7 @@ export default function DashboardPage() {
                 <ArrowRight size={18} className="text-slate-500 group-hover:text-orange-400 group-hover:translate-x-1 transition-all" />
               </div>
               <h3 className="font-bold text-white mb-0.5">Wyzwanie dnia</h3>
-              <p className="text-xs text-slate-400">10 cwiczen + bonus</p>
+              <p className="text-xs text-slate-400">10 ćwiczeń + bonus</p>
             </div>
           </Link>
 
@@ -197,7 +197,7 @@ export default function DashboardPage() {
               </div>
               <h3 className="font-bold text-white mb-0.5">Fiszki</h3>
               <p className="text-xs text-slate-400">
-                {toReview > 0 ? `${toReview} do powtorki` : 'Nowe slowa'}
+                {toReview > 0 ? `${toReview} do powtórki` : 'Nowe słowa'}
               </p>
             </div>
           </Link>
@@ -211,7 +211,7 @@ export default function DashboardPage() {
                 <ArrowRight size={18} className="text-slate-500 group-hover:text-cyan-400 group-hover:translate-x-1 transition-all" />
               </div>
               <h3 className="font-bold text-white mb-0.5">Quiz</h3>
-              <p className="text-xs text-slate-400">Sprawdz wiedze</p>
+              <p className="text-xs text-slate-400">Sprawdź wiedzę</p>
             </div>
           </Link>
         </motion.div>
@@ -221,7 +221,7 @@ export default function DashboardPage() {
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
         className="glass rounded-2xl p-5"
       >
-        <h2 className="text-sm font-bold text-white mb-3">Aktywnosc (7 dni)</h2>
+        <h2 className="text-sm font-bold text-white mb-3">Aktywność (7 dni)</h2>
         <div className="grid grid-cols-7 gap-2">
           {Array.from({ length: 7 }).map((_, i) => {
             const date = new Date(Date.now() - (6 - i) * 86400000).toISOString().split('T')[0]

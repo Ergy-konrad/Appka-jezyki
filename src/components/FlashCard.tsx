@@ -94,7 +94,7 @@ export default function FlashCard({ item, onRate, current, total }: FlashCardPro
                   <Volume2 size={20} />
                 </button>
                 <p className="text-slate-500 text-sm mt-4 flex items-center gap-1">
-                  Kliknij, aby odkryc <ArrowRight size={14} />
+                  Kliknij, aby odkryć <ArrowRight size={14} />
                 </p>
               </div>
 
@@ -156,7 +156,7 @@ export default function FlashCard({ item, onRate, current, total }: FlashCardPro
                 onClick={() => setIsFlipped(false)}
                 className="text-xs text-slate-500 flex items-center gap-1 hover:text-slate-300 transition-colors"
               >
-                <RotateCcw size={12} /> Obroc z powrotem
+                <RotateCcw size={12} /> Obróć z powrotem
               </button>
             </div>
           )}

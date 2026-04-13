@@ -12,7 +12,7 @@ import { cn, getDifficultyLabel, getDifficultyColor } from '@/lib/utils'
 
 export default function VocabularyPage() {
   return (
-    <Suspense fallback={<div className="text-slate-400 text-center py-12">Ladowanie...</div>}>
+    <Suspense fallback={<div className="text-slate-400 text-center py-12">Ładowanie...</div>}>
       <VocabularyContent />
     </Suspense>
   )
@@ -64,9 +64,9 @@ function VocabularyContent() {
         <div>
           <h1 className="text-3xl font-bold text-white flex items-center gap-3">
             <BookOpen className="text-emerald-400" />
-            Slownictwo
+            Słownictwo
           </h1>
-          <p className="text-slate-400 mt-1">Przegladaj i ucz sie nowych slow</p>
+          <p className="text-slate-400 mt-1">Przeglądaj i ucz się nowych słów</p>
         </div>
         <LanguageSelector
           selected={language}
@@ -83,7 +83,7 @@ function VocabularyContent() {
         <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
         <input
           type="text"
-          placeholder="Szukaj slow..."
+          placeholder="Szukaj słów..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full pl-11 pr-4 py-3 rounded-xl glass bg-transparent text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 transition-colors"
@@ -191,7 +191,7 @@ function VocabularyContent() {
                       }}
                       className="mt-2 text-xs text-brand-400 flex items-center gap-1 hover:text-brand-300"
                     >
-                      <Volume2 size={12} /> Posluchaj zdania
+                      <Volume2 size={12} /> Posłuchaj zdania
                     </button>
                   </motion.div>
                 )}
@@ -203,7 +203,7 @@ function VocabularyContent() {
         {words.length === 0 && (
           <div className="text-center py-12 text-slate-500">
             <BookOpen size={48} className="mx-auto mb-4 opacity-50" />
-            <p>Nie znaleziono slow</p>
+            <p>Nie znaleziono słów</p>
           </div>
         )}
       </div>

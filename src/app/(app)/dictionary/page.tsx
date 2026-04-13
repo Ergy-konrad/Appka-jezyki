@@ -37,16 +37,16 @@ export default function DictionaryPage() {
       const res = await fetch(`/api/dictionary?word=${encodeURIComponent(query.trim())}&lang=${lang}`)
       if (!res.ok) {
         if (res.status === 404) {
-          setError(`Nie znaleziono slowa "${query}" w slowniku.`)
+          setError(`Nie znaleziono słowa "${query}" w słowniku.`)
         } else {
-          setError('Blad podczas wyszukiwania. Sprobuj ponownie.')
+          setError('Błąd podczas wyszukiwania. Spróbuj ponownie.')
         }
         return
       }
       const data = await res.json()
       setEntries(data)
     } catch {
-      setError('Brak polaczenia z serwerem.')
+      setError('Brak połączenia z serwerem.')
     } finally {
       setLoading(false)
     }
@@ -72,10 +72,10 @@ export default function DictionaryPage() {
       <div>
         <h1 className="text-3xl font-bold text-white flex items-center gap-3">
           <BookOpen className="text-amber-400" />
-          Slownik
+          Słownik
         </h1>
         <p className="text-slate-400 mt-1">
-          Darmowy slownik angielski i hiszpanski - definicje, wymowa, przyklady
+          Darmowy słownik angielski i hiszpański - definicje, wymowa, przykłady
         </p>
       </div>
 
@@ -101,7 +101,7 @@ export default function DictionaryPage() {
                 : 'bg-slate-800 text-slate-400 hover:text-white'
             }`}
           >
-            <span>🇪🇸</span> Hiszpanski
+            <span>🇪🇸</span> Hiszpański
           </button>
         </div>
 
@@ -119,7 +119,7 @@ export default function DictionaryPage() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder={lang === 'en' ? 'Wpisz angielskie slowo...' : 'Wpisz hiszpanskie slowo...'}
+              placeholder={lang === 'en' ? 'Wpisz angielskie słowo...' : 'Wpisz hiszpańskie słowo...'}
               className="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-800/80 border border-white/5 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 transition-colors"
             />
           </div>
@@ -252,7 +252,7 @@ export default function DictionaryPage() {
                   rel="noopener noreferrer"
                   className="text-xs text-slate-500 hover:text-slate-300 flex items-center gap-1 transition-colors"
                 >
-                  <ExternalLink size={12} /> Zrodlo
+                  <ExternalLink size={12} /> Źródło
                 </a>
               </div>
             )}
@@ -264,9 +264,9 @@ export default function DictionaryPage() {
       {!loading && entries.length === 0 && !error && (
         <div className="text-center py-16">
           <BookOpen size={64} className="mx-auto text-slate-700 mb-4" />
-          <p className="text-slate-500 text-lg">Wpisz slowo, aby wyszukac definicje</p>
+          <p className="text-slate-500 text-lg">Wpisz słowo, aby wyszukać definicję</p>
           <p className="text-slate-600 text-sm mt-2">
-            Darmowy slownik z wymowa, przykladami i synonimami
+            Darmowy słownik z wymową, przykładami i synonimami
           </p>
         </div>
       )}

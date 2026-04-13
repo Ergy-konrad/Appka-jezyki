@@ -19,7 +19,7 @@ const resources: Resource[] = [
   {
     name: 'BBC Learning English',
     url: 'https://www.bbc.co.uk/learningenglish',
-    description: 'Najlepszy darmowy kurs angielskiego online. Filmy, podcasty, cwiczenia gramatyczne. Idealne na B2.',
+    description: 'Najlepszy darmowy kurs angielskiego online. Filmy, podcasty, ćwiczenia gramatyczne. Idealne na B2.',
     type: 'website',
     language: 'en',
     level: 'B1-C1',
@@ -28,7 +28,7 @@ const resources: Resource[] = [
   {
     name: 'British Council - LearnEnglish',
     url: 'https://learnenglish.britishcouncil.org',
-    description: 'Oficjalne materialy British Council. Gramatyka, slownictwo, listening, reading - wszystko za darmo.',
+    description: 'Oficjalne materiały British Council. Gramatyka, słownictwo, listening, reading - wszystko za darmo.',
     type: 'website',
     language: 'en',
     level: 'A1-C1',
@@ -37,7 +37,7 @@ const resources: Resource[] = [
   {
     name: 'English Grammar in Use (Raymond Murphy)',
     url: 'https://www.cambridge.org/us/cambridgeenglish/catalog/grammar-vocabulary-and-pronunciation/english-grammar-use-5th-edition',
-    description: 'BIBLIA gramatyki angielskiej. Najlepsza ksiazka do nauki gramatyki na swiecie. Wersja Intermediate idealna na B2.',
+    description: 'BIBLIA gramatyki angielskiej. Najlepsza książka do nauki gramatyki na świecie. Wersja Intermediate idealna na B2.',
     type: 'textbook',
     language: 'en',
     level: 'B1-B2',
@@ -46,7 +46,7 @@ const resources: Resource[] = [
   {
     name: 'Podcast: 6 Minute English (BBC)',
     url: 'https://www.bbc.co.uk/learningenglish/english/features/6-minute-english',
-    description: 'Krotkie 6-minutowe odcinki na rozne tematy. Idealny listening practice na B2. Darmowy z transkrypcjami.',
+    description: 'Krótkie 6-minutowe odcinki na różne tematy. Idealny listening practice na B2. Darmowy z transkrypcjami.',
     type: 'audio',
     language: 'en',
     level: 'B2',
@@ -55,7 +55,7 @@ const resources: Resource[] = [
   {
     name: 'TED Talks',
     url: 'https://www.ted.com/talks',
-    description: 'Najlepszy sposob na zaawansowany listening. Napisy w wielu jezykach. Roznorodne tematy.',
+    description: 'Najlepszy sposób na zaawansowany listening. Napisy w wielu językach. Różnorodne tematy.',
     type: 'video',
     language: 'en',
     level: 'B2-C1',
@@ -64,7 +64,7 @@ const resources: Resource[] = [
   {
     name: 'YouGlish',
     url: 'https://youglish.com',
-    description: 'Wpisz dowolne angielskie slowo i zobacz jak uzywa je natywny speaker w prawdziwym filmie YT. Genialny do wymowy.',
+    description: 'Wpisz dowolne angielskie słowo i zobacz jak używa je natywny speaker w prawdziwym filmie YT. Genialny do wymowy.',
     type: 'website',
     language: 'en',
     level: 'A2-C2',
@@ -73,7 +73,7 @@ const resources: Resource[] = [
   {
     name: 'Podcast: All Ears English',
     url: 'https://www.allearsenglish.com',
-    description: 'Naturalny, codzienny angielski. Dwie Amerykanki rozmawiaja o zyciu. Super do osłuchania z akcentem.',
+    description: 'Naturalny, codzienny angielski. Dwie Amerykanki rozmawiają o życiu. Super do osłuchania z akcentem.',
     type: 'audio',
     language: 'en',
     level: 'B1-B2',

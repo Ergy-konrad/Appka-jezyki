@@ -24,7 +24,7 @@ export default function TypeAnswer({
   emoji,
   language,
   onResult,
-  placeholder = 'Wpisz odpowiedz...',
+  placeholder = 'Wpisz odpowiedź...',
   showHintAfter = 2,
 }: TypeAnswerProps) {
   const [input, setInput] = useState('')
@@ -148,7 +148,7 @@ export default function TypeAnswer({
             animate={{ opacity: 1 }}
             className="text-center text-sm text-red-400 mt-2"
           >
-            Sprobuj jeszcze raz! ({3 - attempts} {3 - attempts === 1 ? 'proba' : 'proby'})
+            Spróbuj jeszcze raz! ({3 - attempts} {3 - attempts === 1 ? 'proba' : 'proby'})
           </motion.p>
         )}
 
@@ -158,7 +158,7 @@ export default function TypeAnswer({
             animate={{ opacity: 1, y: 0 }}
             className="text-center mt-4 glass rounded-xl p-4"
           >
-            <p className="text-sm text-slate-400 mb-1">Poprawna odpowiedz:</p>
+            <p className="text-sm text-slate-400 mb-1">Poprawna odpowiedź:</p>
             <p className="text-xl font-bold text-white">{correctAnswer}</p>
           </motion.div>
         )}
@@ -171,7 +171,7 @@ export default function TypeAnswer({
             className="flex items-center justify-center gap-2 mt-3 text-sm text-amber-400"
           >
             <Lightbulb size={14} />
-            Podpowiedz: <span className="font-mono tracking-widest">{hintText}</span>
+            Podpowiedź: <span className="font-mono tracking-widest">{hintText}</span>
           </motion.div>
         )}
 
@@ -182,7 +182,7 @@ export default function TypeAnswer({
             disabled={!input.trim()}
             className="w-full mt-4 py-3 rounded-xl bg-brand-500 text-white font-medium hover:bg-brand-600 transition-colors disabled:opacity-30"
           >
-            Sprawdz
+            Sprawdź
           </button>
         )}
       </form>

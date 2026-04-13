@@ -39,7 +39,7 @@ export default function ReadingPage() {
         <div>
           <button onClick={() => { setSelectedArticle(null); setShowTranslations({}); setAnsweredQuestions({}); setShowAllTranslations(false) }}
             className="flex items-center gap-2 text-sm text-slate-400 hover:text-white mb-3 transition-colors">
-            <ArrowLeft size={16} /> Wszystkie artykuly
+            <ArrowLeft size={16} /> Wszystkie artykuły
           </button>
           <div className="flex items-start gap-3">
             <span className="text-4xl">{selectedArticle.emoji}</span>
@@ -60,11 +60,11 @@ export default function ReadingPage() {
           <button onClick={() => setShowAllTranslations(!showAllTranslations)}
             className="flex items-center gap-2 px-3 py-2 rounded-xl glass text-sm text-slate-300 hover:text-white transition-colors">
             {showAllTranslations ? <EyeOff size={14} /> : <Eye size={14} />}
-            {showAllTranslations ? 'Ukryj tlumaczenia' : 'Pokaz tlumaczenia'}
+            {showAllTranslations ? 'Ukryj tłumaczenia' : 'Pokaż tłumaczenia'}
           </button>
           <button onClick={() => speak(selectedArticle.paragraphs.map(p => p.text).join('. '), selectedArticle.language)}
             className="flex items-center gap-2 px-3 py-2 rounded-xl glass text-sm text-brand-300 hover:text-brand-200 transition-colors">
-            <Volume2 size={14} /> Przeczytaj calosc
+            <Volume2 size={14} /> Przeczytaj całość
           </button>
         </div>
 
@@ -90,7 +90,7 @@ export default function ReadingPage() {
                 <button onClick={() => toggleParagraphTranslation(idx)}
                   className="text-xs text-slate-500 hover:text-slate-300 mt-2 flex items-center gap-1 transition-colors">
                   {showTranslations[idx] ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
-                  {showTranslations[idx] ? 'Ukryj' : 'Pokaz'} tlumaczenie
+                  {showTranslations[idx] ? 'Ukryj' : 'Pokaż'} tłumaczenie
                 </button>
               )}
             </motion.div>
@@ -102,7 +102,7 @@ export default function ReadingPage() {
           <button onClick={() => setShowVocab(!showVocab)}
             className="flex items-center justify-between w-full text-left">
             <h3 className="font-bold text-white flex items-center gap-2">
-              <BookOpen size={18} className="text-emerald-400" /> Slownictwo z tekstu ({selectedArticle.vocabulary.length})
+              <BookOpen size={18} className="text-emerald-400" /> Słownictwo z tekstu ({selectedArticle.vocabulary.length})
             </h3>
             {showVocab ? <ChevronUp size={18} className="text-slate-400" /> : <ChevronDown size={18} className="text-slate-400" />}
           </button>
@@ -141,7 +141,7 @@ export default function ReadingPage() {
               ) : (
                 <button onClick={() => setAnsweredQuestions(prev => ({ ...prev, [idx]: true }))}
                   className="text-sm text-brand-400 hover:text-brand-300 transition-colors">
-                  Pokaz odpowiedz
+                  Pokaż odpowiedź
                 </button>
               )}
             </div>
@@ -158,7 +158,7 @@ export default function ReadingPage() {
           <h1 className="text-3xl font-bold text-white flex items-center gap-3">
             <BookOpen className="text-rose-400" /> Czytanki
           </h1>
-          <p className="text-slate-400 mt-1">Czytaj artykuly z tlumaczeniem, slownictwem i pytaniami</p>
+          <p className="text-slate-400 mt-1">Czytaj artykuły z tłumaczeniem, słownictwem i pytaniami</p>
         </div>
         <LanguageSelector selected={language} onChange={setLanguage} />
       </div>
@@ -166,9 +166,9 @@ export default function ReadingPage() {
       {/* Tip */}
       <div className="glass rounded-2xl p-5 border-l-4 border-rose-500">
         <p className="text-sm text-slate-300">
-          <strong className="text-rose-400">Jak czytac skutecznie:</strong> Najpierw przeczytaj calosc bez tlumaczenia.
-          Potem klikaj na paragrafy, ktorych nie rozumiesz. Na koncu odpowiedz na pytania.
-          Sluchaj wymowy klikajac ikone glosnika.
+          <strong className="text-rose-400">Jak czytać skutecznie:</strong> Najpierw przeczytaj całość bez tłumaczenia.
+          Potem klikaj na paragrafy, których nie rozumiesz. Na końcu odpowiedz na pytania.
+          Słuchaj wymowy klikając ikonę głośnika.
         </p>
       </div>
 
@@ -188,7 +188,7 @@ export default function ReadingPage() {
                   <span className="text-xs px-2 py-0.5 rounded bg-brand-500/20 text-brand-300">{article.level}</span>
                   <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 flex items-center gap-1"><Clock size={10} /> {article.readingTime} min</span>
                   <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400">{article.category}</span>
-                  <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400">{article.vocabulary.length} slow</span>
+                  <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400">{article.vocabulary.length} słów</span>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@ export default function ReadingPage() {
         {articles.length === 0 && (
           <div className="text-center py-12 text-slate-500">
             <BookOpen size={48} className="mx-auto mb-3 opacity-50" />
-            <p>Brak artykulow dla tego jezyka</p>
+            <p>Brak artykułów dla tego języka</p>
           </div>
         )}
       </div>

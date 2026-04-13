@@ -76,9 +76,9 @@ export default function QuizPage() {
 
   const getResultMessage = () => {
     if (accuracy >= 90) return { text: 'Fenomenalnie!', emoji: '🏆' }
-    if (accuracy >= 70) return { text: 'Swietnie!', emoji: '🎉' }
+    if (accuracy >= 70) return { text: 'Świetnie!', emoji: '🎉' }
     if (accuracy >= 50) return { text: 'Nieźle!', emoji: '💪' }
-    return { text: 'Nie poddawaj sie!', emoji: '📚' }
+    return { text: 'Nie poddawaj się!', emoji: '📚' }
   }
 
   return (
@@ -89,7 +89,7 @@ export default function QuizPage() {
             <Brain className="text-cyan-400" />
             Quiz
           </h1>
-          <p className="text-slate-400 mt-1">Sprawdz swoja wiedze</p>
+          <p className="text-slate-400 mt-1">Sprawdź swoją wiedzę</p>
         </div>
         {state === 'setup' && (
           <LanguageSelector selected={language} onChange={setLanguage} />
@@ -107,7 +107,7 @@ export default function QuizPage() {
           >
             {/* Question count */}
             <div className="glass rounded-2xl p-6">
-              <p className="text-sm text-slate-400 mb-3">Liczba pytan:</p>
+              <p className="text-sm text-slate-400 mb-3">Liczba pytań:</p>
               <div className="flex gap-2">
                 {[5, 10, 15, 20].map(count => (
                   <button
@@ -135,7 +135,7 @@ export default function QuizPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Rozpocznij quiz</h3>
               <p className="text-slate-400 text-sm mb-4">
-                {questionCount} pytan z {language === 'en' ? 'angielskiego' : 'hiszpanskiego'}
+                {questionCount} pytań z {language === 'en' ? 'angielskiego' : 'hiszpańskiego'}
               </p>
               <div className="inline-flex items-center gap-2 text-cyan-400 font-medium">
                 Start <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -188,7 +188,7 @@ export default function QuizPage() {
               </div>
               <div className="glass rounded-xl p-4">
                 <p className="text-2xl font-bold text-brand-400">{accuracy}%</p>
-                <p className="text-xs text-slate-400">dokladnosc</p>
+                <p className="text-xs text-slate-400">dokładność</p>
               </div>
               <div className="glass rounded-xl p-4">
                 <p className="text-2xl font-bold text-yellow-400">{score * 8}</p>

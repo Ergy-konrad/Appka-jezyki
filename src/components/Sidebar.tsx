@@ -29,27 +29,27 @@ const navSections = [
   {
     title: 'Nauka',
     items: [
-      { href: '/dashboard', label: 'Panel glowny', icon: LayoutDashboard, desc: 'Statystyki i skroty' },
+      { href: '/dashboard', label: 'Panel główny', icon: LayoutDashboard, desc: 'Statystyki i skróty' },
       { href: '/learn', label: 'Nauka', icon: GraduationCap, desc: '5-etapowa sesja nauki' },
-      { href: '/challenge', label: 'Wyzwanie dnia', icon: Flame, desc: '10 cwiczen dziennie' },
+      { href: '/challenge', label: 'Wyzwanie dnia', icon: Flame, desc: '10 ćwiczeń dziennie' },
     ],
   },
   {
-    title: 'Cwiczenia',
+    title: 'Ćwiczenia',
     items: [
-      { href: '/flashcards', label: 'Fiszki', icon: Layers, desc: 'Powtorki z algorytmem SRS' },
-      { href: '/quiz', label: 'Quiz', icon: Brain, desc: 'Sprawdz swoja wiedze' },
-      { href: '/reading', label: 'Czytanki', icon: FileText, desc: 'Artykuly z tlumaczeniem' },
-      { href: '/phrases', label: 'Zdania', icon: MessageCircle, desc: 'Gotowe zwroty na kazda sytuacje' },
+      { href: '/flashcards', label: 'Fiszki', icon: Layers, desc: 'Powtórki z algorytmem SRS' },
+      { href: '/quiz', label: 'Quiz', icon: Brain, desc: 'Sprawdź swoją wiedzę' },
+      { href: '/reading', label: 'Czytanki', icon: FileText, desc: 'Artykuły z tłumaczeniem' },
+      { href: '/phrases', label: 'Zdania', icon: MessageCircle, desc: 'Gotowe zwroty na każdą sytuację' },
     ],
   },
   {
-    title: 'Narzedzia',
+    title: 'Narzędzia',
     items: [
-      { href: '/vocabulary', label: 'Slownictwo', icon: BookOpen, desc: 'Przegladaj wszystkie slowa' },
-      { href: '/dictionary', label: 'Slownik', icon: BookMarked, desc: 'Darmowy slownik online' },
+      { href: '/vocabulary', label: 'Słownictwo', icon: BookOpen, desc: 'Przeglądaj wszystkie słowa' },
+      { href: '/dictionary', label: 'Słownik', icon: BookMarked, desc: 'Darmowy słownik online' },
       { href: '/tutor', label: 'AI Tutor', icon: Bot, desc: 'Czat z nauczycielem AI' },
-      { href: '/resources', label: 'Zasoby', icon: Library, desc: 'Podreczniki i podcasty' },
+      { href: '/resources', label: 'Zasoby', icon: Library, desc: 'Podręczniki i podcasty' },
     ],
   },
 ]
@@ -94,7 +94,7 @@ export default function Sidebar() {
             </div>
             <div>
               <h1 className="text-lg font-bold gradient-text">LinguaApp</h1>
-              <p className="text-xs text-slate-500">Ucz sie jezykow</p>
+              <p className="text-xs text-slate-500">Ucz się języków</p>
             </div>
           </Link>
         </div>

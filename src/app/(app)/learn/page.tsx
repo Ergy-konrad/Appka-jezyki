@@ -61,10 +61,10 @@ function generateSteps(words: VocabularyItem[]): LearningStep[] {
 
 const STEP_LABELS: Record<StepType, { label: string; icon: typeof BookOpen; color: string }> = {
   introduce: { label: 'Poznaj', icon: BookOpen, color: 'text-brand-400' },
-  typeTranslation: { label: 'Przetlumacz', icon: Keyboard, color: 'text-cyan-400' },
+  typeTranslation: { label: 'Przetłumacz', icon: Keyboard, color: 'text-cyan-400' },
   typeWord: { label: 'Przypomnij', icon: Star, color: 'text-yellow-400' },
-  sentenceComplete: { label: 'Uzupelnij', icon: MessageSquare, color: 'text-emerald-400' },
-  listening: { label: 'Posluchaj', icon: Headphones, color: 'text-violet-400' },
+  sentenceComplete: { label: 'Uzupełnij', icon: MessageSquare, color: 'text-emerald-400' },
+  listening: { label: 'Posłuchaj', icon: Headphones, color: 'text-violet-400' },
 }
 
 export default function LearnPage() {
@@ -178,7 +178,7 @@ export default function LearnPage() {
             Nauka
           </h1>
           <p className="text-slate-400 mt-1">
-            Poznaj &rarr; Przetlumacz &rarr; Uzupelnij &rarr; Posluchaj &rarr; Przypomnij
+            Poznaj &rarr; Przetłumacz &rarr; Uzupełnij &rarr; Posłuchaj &rarr; Przypomnij
           </p>
         </div>
         {state === 'setup' && (
@@ -198,13 +198,13 @@ export default function LearnPage() {
           >
             {/* Method explanation */}
             <div className="glass rounded-2xl p-6 border-l-4 border-emerald-500">
-              <h3 className="font-bold text-white mb-2">Jak dziala nauka?</h3>
+              <h3 className="font-bold text-white mb-2">Jak działa nauka?</h3>
               <p className="text-sm text-slate-400 leading-relaxed">
-                Kazde slowo przechodzi przez <strong className="text-white">5 etapow</strong> - od poznania do samodzielnego pisania.
-                To podejscie laczy <strong className="text-emerald-400">active recall</strong> (aktywne przypominanie),{' '}
-                <strong className="text-cyan-400">spaced repetition</strong> (powtorki w czasie) i{' '}
-                <strong className="text-violet-400">interleaving</strong> (mieszanie typow cwiczen).
-                Naukowo udowodniono, ze ta kombinacja jest 3x skuteczniejsza niz zwykle czytanie.
+                Każde słowo przechodzi przez <strong className="text-white">5 etapów</strong> - od poznania do samodzielnego pisania.
+                To podejście łączy <strong className="text-emerald-400">active recall</strong> (aktywne przypominanie),{' '}
+                <strong className="text-cyan-400">spaced repetition</strong> (powtórki w czasie) i{' '}
+                <strong className="text-violet-400">interleaving</strong> (mieszanie typów ćwiczeń).
+                Naukowo udowodniono, że ta kombinacja jest 3x skuteczniejsza niż zwykłe czytanie.
               </p>
             </div>
 
@@ -226,7 +226,7 @@ export default function LearnPage() {
 
             {/* Batch size */}
             <div className="glass rounded-2xl p-6">
-              <p className="text-sm text-slate-400 mb-3">Ile slow w sesji:</p>
+              <p className="text-sm text-slate-400 mb-3">Ile słów w sesji:</p>
               <div className="flex gap-2">
                 {[3, 5, 7, 10].map(size => (
                   <button
@@ -243,7 +243,7 @@ export default function LearnPage() {
                 ))}
               </div>
               <p className="text-xs text-slate-500 mt-2">
-                = {batchSize * 5} cwiczen (kazde slowo x 5 etapow)
+                = {batchSize * 5} ćwiczeń (każde słowo x 5 etapów)
               </p>
             </div>
 
@@ -256,12 +256,12 @@ export default function LearnPage() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-cyan-600 flex items-center justify-center mb-4">
                   <GraduationCap size={28} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Nowe slowa</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Nowe słowa</h3>
                 <p className="text-slate-400 text-sm mb-3">
-                  Poznaj i naucz sie nowego slownictwa
+                  Poznaj i naucz się nowego słownictwa
                 </p>
                 <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-medium">
-                  {newCount} dostepnych
+                  {newCount} dostępnych
                 </span>
               </button>
 
@@ -272,12 +272,12 @@ export default function LearnPage() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center mb-4">
                   <RotateCcw size={28} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Powtorka</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Powtórka</h3>
                 <p className="text-slate-400 text-sm mb-3">
-                  Powtorz slowa przed zapomnieniem
+                  Powtórz słowa przed zapomnieniem
                 </p>
                 <span className="px-3 py-1 rounded-full bg-orange-500/20 text-orange-400 text-sm font-medium">
-                  {reviewCount} do powtorki
+                  {reviewCount} do powtórki
                 </span>
               </button>
             </div>
@@ -348,7 +348,7 @@ export default function LearnPage() {
                     }}
                     className="text-xs text-brand-400 flex items-center gap-1 mx-auto hover:text-brand-300"
                   >
-                    <Volume2 size={12} /> Posluchaj zdania
+                    <Volume2 size={12} /> Posłuchaj zdania
                   </button>
                 </div>
                 <button
@@ -365,12 +365,12 @@ export default function LearnPage() {
               <TypeAnswer
                 key={`type-tr-${currentStepData.word.id}`}
                 prompt={currentStepData.word.word}
-                promptSubtitle="Wpisz polskie tlumaczenie"
+                promptSubtitle="Wpisz polskie tłumaczenie"
                 correctAnswer={currentStepData.word.translation}
                 emoji={currentStepData.word.emoji}
                 language={currentStepData.word.language}
                 onResult={handleStepResult}
-                placeholder="Wpisz tlumaczenie po polsku..."
+                placeholder="Wpisz tłumaczenie po polsku..."
               />
             )}
 
@@ -379,11 +379,11 @@ export default function LearnPage() {
               <TypeAnswer
                 key={`type-word-${currentStepData.word.id}`}
                 prompt={currentStepData.word.translation}
-                promptSubtitle={`Wpisz slowo po ${currentStepData.word.language === 'en' ? 'angielsku' : 'hiszpansku'}`}
+                promptSubtitle={`Wpisz słowo po ${currentStepData.word.language === 'en' ? 'angielsku' : 'hiszpańsku'}`}
                 correctAnswer={currentStepData.word.word}
                 emoji={currentStepData.word.emoji}
                 onResult={handleStepResult}
-                placeholder={`Wpisz po ${currentStepData.word.language === 'en' ? 'angielsku' : 'hiszpansku'}...`}
+                placeholder={`Wpisz po ${currentStepData.word.language === 'en' ? 'angielsku' : 'hiszpańsku'}...`}
               />
             )}
 
@@ -429,12 +429,12 @@ export default function LearnPage() {
               <Trophy size={64} className="text-yellow-400 mx-auto mb-4" />
             </motion.div>
 
-            <h2 className="text-3xl font-bold text-white mb-2">Sesja zakonczona!</h2>
+            <h2 className="text-3xl font-bold text-white mb-2">Sesja zakończona!</h2>
 
             {failedWords.size === 0 ? (
               <p className="text-emerald-400 font-medium mb-6">Perfekcyjnie! Bonus +20 XP</p>
             ) : (
-              <p className="text-slate-400 mb-6">Dobra robota! Kontynuuj nauke.</p>
+              <p className="text-slate-400 mb-6">Dobra robota! Kontynuuj naukę.</p>
             )}
 
             <div className="grid grid-cols-4 gap-3 mb-8 max-w-md mx-auto">
@@ -448,13 +448,13 @@ export default function LearnPage() {
               </div>
               <div className="glass rounded-xl p-3">
                 <p className="text-xl font-bold text-red-400">{results.length - totalCorrect}</p>
-                <p className="text-xs text-slate-400">bledne</p>
+                <p className="text-xs text-slate-400">błędne</p>
               </div>
               <div className="glass rounded-xl p-3">
                 <p className="text-xl font-bold text-brand-400">
                   {results.length > 0 ? Math.round((totalCorrect / results.length) * 100) : 0}%
                 </p>
-                <p className="text-xs text-slate-400">dokladnosc</p>
+                <p className="text-xs text-slate-400">dokładność</p>
               </div>
             </div>
 
@@ -463,19 +463,19 @@ export default function LearnPage() {
                 onClick={() => startSession('new')}
                 className="px-6 py-3 rounded-xl bg-emerald-500 text-white font-medium hover:bg-emerald-600 transition-colors"
               >
-                Nowe slowa
+                Nowe słowa
               </button>
               <button
                 onClick={() => startSession('review')}
                 className="px-6 py-3 rounded-xl bg-orange-500 text-white font-medium hover:bg-orange-600 transition-colors"
               >
-                Powtorka
+                Powtórka
               </button>
               <button
                 onClick={() => setState('setup')}
                 className="px-6 py-3 rounded-xl glass text-slate-300 font-medium hover:bg-white/10 transition-colors"
               >
-                Powrot
+                Powrót
               </button>
             </div>
           </motion.div>
