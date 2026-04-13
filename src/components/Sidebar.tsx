@@ -19,9 +19,11 @@ import {
   Menu,
   X,
   Zap,
+  LogOut,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { getStats } from '@/lib/storage'
+import { createClient } from '@/lib/supabase/client'
 
 const navSections = [
   {
@@ -162,6 +164,17 @@ export default function Sidebar() {
               </div>
             </div>
           )}
+          <button
+            onClick={async () => {
+              const supabase = createClient()
+              if (supabase) await supabase.auth.signOut()
+              window.location.href = '/login'
+            }}
+            className="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-slate-500 hover:text-red-400 hover:bg-red-500/10 transition-all w-full"
+          >
+            <LogOut size={16} />
+            <span>Wyloguj</span>
+          </button>
         </div>
       </aside>
     </>
