@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'LinguaApp - Ucz sie jezykow',
-  description: 'Angielski B2 + Hiszpanski od zera. Fiszki, quizy, AI tutor, spaced repetition.',
+  title: 'LinguaApp - Ucz się języków',
+  description: 'Angielski B2 + Hiszpański od zera. Fiszki, quizy, AI tutor, spaced repetition.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,

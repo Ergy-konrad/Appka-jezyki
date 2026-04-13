@@ -155,7 +155,7 @@ export default function ListeningExercise({
 
         {result === 'wrong' && !showAnswer && (
           <p className="text-center text-sm text-red-400 mt-2">
-            Nie do końca. Posłuchaj jeszcze raz i spróbuj! ({3 - attempts} proby)
+            Nie do końca. Posłuchaj jeszcze raz i spróbuj! ({3 - attempts} próby)
           </p>
         )}
 
@@ -165,7 +165,7 @@ export default function ListeningExercise({
             animate={{ opacity: 1 }}
             className="text-center glass rounded-xl p-4 mt-4"
           >
-            <p className="text-sm text-slate-400">Poprawna odpowiedz:</p>
+            <p className="text-sm text-slate-400">Poprawna odpowiedź:</p>
             <p className="text-xl font-bold text-white">{correctAnswer}</p>
           </motion.div>
         )}
@@ -176,7 +176,7 @@ export default function ListeningExercise({
             disabled={!input.trim()}
             className="w-full mt-4 py-3 rounded-xl bg-brand-500 text-white font-medium hover:bg-brand-600 transition-colors disabled:opacity-30"
           >
-            Sprawdz
+            Sprawdź
           </button>
         )}
       </form>

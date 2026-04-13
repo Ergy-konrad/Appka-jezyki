@@ -229,7 +229,7 @@ export default function DashboardPage() {
             const xp = activity?.xpEarned || 0
             const intensity = xp === 0 ? 0 : xp < 20 ? 1 : xp < 50 ? 2 : 3
             const colors = ['bg-slate-800', 'bg-brand-500/30', 'bg-brand-500/50', 'bg-brand-500']
-            const dayNames = ['Nd', 'Pn', 'Wt', 'Sr', 'Cz', 'Pt', 'So']
+            const dayNames = ['Nd', 'Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So']
             return (
               <div key={date} className="text-center">
                 <p className="text-xs text-slate-500 mb-1">{dayNames[new Date(date).getDay()]}</p>
