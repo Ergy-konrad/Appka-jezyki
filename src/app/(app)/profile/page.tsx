@@ -33,12 +33,12 @@ export default function ProfilePage() {
 
   const shareProfile = () => {
     const s = getStats()
-    const text = `Ucze sie jezykow w LinguaApp!\n` +
+    const text = `Uczę się języków w LinguaApp!\n` +
       `Poziom: ${getLevelFromXp(s.totalXp)}\n` +
       `XP: ${s.totalXp}\n` +
       `Seria: ${s.currentStreak} dni\n` +
-      `Slowa: ${getLearnedWordIds().length}/${allVocabulary.length}\n` +
-      `Dolacz: ${window.location.origin}`
+      `Słowa: ${getLearnedWordIds().length}/${allVocabulary.length}\n` +
+      `Dołącz: ${window.location.origin}`
 
     if (navigator.share) {
       navigator.share({ title: 'LinguaApp - moj profil', text })
@@ -71,7 +71,7 @@ export default function ProfilePage() {
           className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-sm text-slate-300 hover:text-white transition-colors"
         >
           {copied ? <Check size={16} className="text-emerald-400" /> : <Share2 size={16} />}
-          {copied ? 'Skopiowano!' : 'Udostepnij'}
+          {copied ? 'Skopiowano!' : 'Udostępnij'}
         </button>
       </div>
 
@@ -102,7 +102,7 @@ export default function ProfilePage() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Twoje imie..."
+                  placeholder="Twoje imię..."
                   className="px-3 py-2 rounded-lg bg-slate-800 border border-white/10 text-white focus:outline-none focus:border-brand-500/50"
                   autoFocus
                   onKeyDown={(e) => e.key === 'Enter' && saveName()}
@@ -116,7 +116,7 @@ export default function ProfilePage() {
                 onClick={() => setEditingName(true)}
                 className="text-2xl font-bold text-white hover:text-brand-300 transition-colors"
               >
-                {name || 'Kliknij, aby dodac imie'}
+                {name || 'Kliknij, aby dodać imię'}
               </button>
             )}
             <p className="text-slate-400 text-sm mt-1">
@@ -130,7 +130,7 @@ export default function ProfilePage() {
                 <Zap size={14} /> {stats.totalXp} XP
               </span>
               <span className="flex items-center gap-1 text-sm text-emerald-400">
-                <BookOpen size={14} /> {learned} slow
+                <BookOpen size={14} /> {learned} słów
               </span>
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function ProfilePage() {
             <span className="text-3xl">🇬🇧</span>
             <div>
               <h3 className="font-bold text-white">Angielski B2</h3>
-              <p className="text-xs text-slate-400">{enLearned} / {enTotal} slow</p>
+              <p className="text-xs text-slate-400">{enLearned} / {enTotal} słów</p>
             </div>
           </div>
           <div className="h-3 bg-slate-800 rounded-full overflow-hidden">

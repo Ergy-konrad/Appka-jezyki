@@ -82,7 +82,7 @@ const resources: Resource[] = [
   {
     name: 'News in Levels',
     url: 'https://www.newsinlevels.com',
-    description: 'Wiadomosci ze swiata w 3 poziomach trudnosci. Mozesz czytac to samo na Level 1, 2 i 3.',
+    description: 'Wiadomości ze świata w 3 poziomach trudności. Możesz czytać to samo na Level 1, 2 i 3.',
     type: 'website',
     language: 'en',
     level: 'A1-B2',
@@ -93,7 +93,7 @@ const resources: Resource[] = [
   {
     name: 'SpanishDict',
     url: 'https://www.spanishdict.com',
-    description: 'Najlepszy slownik hiszpanski + darmowy kurs gramatyki. Tlumaczenia, koniugacja czasownikow, lekcje.',
+    description: 'Najlepszy słownik hiszpański + darmowy kurs gramatyki. Tłumaczenia, koniugacja czasowników, lekcje.',
     type: 'website',
     language: 'es',
     level: 'A1-B2',
@@ -102,7 +102,7 @@ const resources: Resource[] = [
   {
     name: 'Podcast: Coffee Break Spanish',
     url: 'https://coffeebreaklanguages.com/coffeebreakspanish/',
-    description: 'Najlepszy podcast do nauki hiszpanskiego od zera. Krotkie lekcje, jasne tlumaczenia. Prowadzony po angielsku.',
+    description: 'Najlepszy podcast do nauki hiszpańskiego od zera. Krótkie lekcje, jasne tłumaczenia. Prowadzony po angielsku.',
     type: 'audio',
     language: 'es',
     level: 'A1-B1',
@@ -111,7 +111,7 @@ const resources: Resource[] = [
   {
     name: 'Dreaming Spanish (YouTube)',
     url: 'https://www.dreamingspanish.com',
-    description: 'Comprehensible input - sluchasz hiszpanskiego na swoim poziomie. Najskuteczniejsza metoda nauki. Superbeginner -> Advanced.',
+    description: 'Comprehensible input - słuchasz hiszpańskiego na swoim poziomie. Najskuteczniejsza metoda nauki. Superbeginner -> Advanced.',
     type: 'video',
     language: 'es',
     level: 'A0-B2',
@@ -120,7 +120,7 @@ const resources: Resource[] = [
   {
     name: 'StudySpanish.com',
     url: 'https://studyspanish.com',
-    description: 'Darmowe lekcje gramatyki hiszpanskiej od podstaw. Proste wyjasnienia + cwiczenia.',
+    description: 'Darmowe lekcje gramatyki hiszpańskiej od podstaw. Proste wyjaśnienia + ćwiczenia.',
     type: 'website',
     language: 'es',
     level: 'A1-B1',
@@ -129,7 +129,7 @@ const resources: Resource[] = [
   {
     name: 'Language Transfer - Spanish',
     url: 'https://www.languagetransfer.org/complete-spanish',
-    description: 'GENIALNE darmowe audio-lekcje. Uczy myslec po hiszpansku, nie tlumaczac. 90 lekcji od zera. Najlepsza darmowa metoda.',
+    description: 'GENIALNE darmowe audio-lekcje. Uczy myśleć po hiszpańsku, nie tłumacząc. 90 lekcji od zera. Najlepsza darmowa metoda.',
     type: 'audio',
     language: 'es',
     level: 'A0-B1',
@@ -138,7 +138,7 @@ const resources: Resource[] = [
   {
     name: 'Podcast: Notes in Spanish',
     url: 'https://www.notesinspanish.com',
-    description: 'Para (on Anglik, ona Hiszpanka) rozmawiaja po hiszpansku. Rozne poziomy od Beginner do Advanced.',
+    description: 'Para (on Anglik, ona Hiszpanka) rozmawiają po hiszpańsku. Różne poziomy od Beginner do Advanced.',
     type: 'audio',
     language: 'es',
     level: 'A2-C1',
@@ -147,7 +147,7 @@ const resources: Resource[] = [
   {
     name: 'Conjuguemos',
     url: 'https://conjuguemos.com',
-    description: 'Darmowe cwiczenia z koniugacji hiszpanskich czasownikow. Interaktywne, z wynikami.',
+    description: 'Darmowe ćwiczenia z koniugacji hiszpańskich czasowników. Interaktywne, z wynikami.',
     type: 'website',
     language: 'es',
     level: 'A1-B2',
@@ -158,7 +158,7 @@ const resources: Resource[] = [
   {
     name: 'Forvo',
     url: 'https://forvo.com',
-    description: 'Wymowa dowolnego slowa nagrana przez native speakerow. Dziala dla KAZDEGO jezyka.',
+    description: 'Wymowa dowolnego słowa nagrana przez native speakerów. Działa dla KAŻDEGO języka.',
     type: 'website',
     language: 'both',
     level: 'A1-C2',
@@ -167,7 +167,7 @@ const resources: Resource[] = [
   {
     name: 'Clozemaster',
     url: 'https://www.clozemaster.com',
-    description: 'Nauka slow w kontekscie zdan. Gamifikacja + spaced repetition. Swietne uzupelnienie fiszek.',
+    description: 'Nauka słów w kontekście zdań. Gamifikacja + spaced repetition. Świetne uzupełnienie fiszek.',
     type: 'app',
     language: 'both',
     level: 'A2-C1',
@@ -184,7 +184,7 @@ const typeIcons: Record<string, typeof BookOpen> = {
 }
 
 const typeLabels: Record<string, string> = {
-  textbook: 'Podrecznik',
+  textbook: 'Podręcznik',
   audio: 'Podcast / Audio',
   video: 'Wideo',
   website: 'Strona WWW',
@@ -209,8 +209,8 @@ export default function ResourcesPage() {
           Zasoby do nauki
         </h1>
         <p className="text-slate-400 mt-1">
-          Najlepsze darmowe podreczniki, podcasty, filmy i strony do nauki jezykow.
-          Osobiscie wyselekcjonowane i przetestowane.
+          Najlepsze darmowe podręczniki, podcasty, filmy i strony do nauki języków.
+          Osobiście wyselekcjonowane i przetestowane.
         </p>
       </div>
 
@@ -219,8 +219,8 @@ export default function ResourcesPage() {
         <h3 className="font-bold text-white mb-1">Pro tip</h3>
         <p className="text-sm text-slate-400">
           Najskuteczniejsza strategia: <strong className="text-amber-300">fiszki + listening + czytanie</strong>.
-          Ucz sie slow w tej appce, sluchaj podcastow w drodze do pracy,
-          i czytaj artykuly/ogladaj filmy wieczorem. 30 min dziennie = plynnosc w 6-12 miesiecy.
+          Ucz się słów w tej appce, słuchaj podcastów w drodze do pracy,
+          i czytaj artykuły/oglądaj filmy wieczorem. 30 min dziennie = płynność w 6-12 miesięcy.
         </p>
       </div>
 
@@ -248,7 +248,7 @@ export default function ResourcesPage() {
             filter === 'es' ? 'bg-brand-500/20 text-brand-300 border border-brand-500/30' : 'glass text-slate-400 hover:text-white'
           }`}
         >
-          🇪🇸 Hiszpanski
+          🇪🇸 Hiszpański
         </button>
         <div className="w-px bg-white/10 mx-1" />
         {Object.entries(typeLabels).map(([key, label]) => (
