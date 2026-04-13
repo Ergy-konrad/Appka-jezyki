@@ -22,7 +22,7 @@ export default function LoginPage() {
     setError('')
 
     if (!email.trim() || !password.trim()) {
-      setError('Wypelnij wszystkie pola.')
+      setError('Wypełnij wszystkie pola.')
       return
     }
 
@@ -36,9 +36,9 @@ export default function LoginPage() {
 
       if (authError) {
         if (authError.message.includes('Invalid login credentials')) {
-          setError('Nieprawidlowy email lub haslo.')
+          setError('Nieprawidłowy email lub hasło.')
         } else if (authError.message.includes('Email not confirmed')) {
-          setError('Potwierdz swoj adres email. Sprawdz skrzynke pocztowa.')
+          setError('Potwierdź swój adres email. Sprawdź skrzynkę pocztową.')
         } else {
           setError(authError.message)
         }
@@ -47,7 +47,7 @@ export default function LoginPage() {
 
       router.push('/dashboard')
     } catch {
-      setError('Cos poszlo nie tak. Sprobuj ponownie.')
+      setError('Coś poszło nie tak. Spróbuj ponownie.')
     } finally {
       setLoading(false)
     }
@@ -79,7 +79,7 @@ export default function LoginPage() {
         <div className="glass rounded-2xl p-8 glow">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-bold text-white mb-2">Witaj z powrotem!</h1>
-            <p className="text-slate-400 text-sm">Zaloguj sie, aby kontynuowac nauke</p>
+            <p className="text-slate-400 text-sm">Zaloguj się, aby kontynuować naukę</p>
           </div>
 
           {/* Guest mode banner */}
@@ -92,14 +92,14 @@ export default function LoginPage() {
               <div className="flex items-center gap-3 mb-3">
                 <WifiOff size={20} className="text-amber-400 shrink-0" />
                 <p className="text-sm text-amber-300 font-medium">
-                  Tryb goscia - dane zapisywane lokalnie
+                  Tryb gościa - dane zapisywane lokalnie
                 </p>
               </div>
               <button
                 onClick={() => router.push('/dashboard')}
                 className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 hover:scale-[1.02]"
               >
-                Przejdz do aplikacji
+                Przejdź do aplikacji
               </button>
             </motion.div>
           )}
@@ -141,7 +141,7 @@ export default function LoginPage() {
               {/* Password */}
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
-                  Haslo
+                  Hasło
                 </label>
                 <div className="relative">
                   <Lock size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
@@ -150,7 +150,7 @@ export default function LoginPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Twoje haslo"
+                    placeholder="Twoje hasło"
                     className="w-full pl-11 pr-12 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/30 transition-all"
                     autoComplete="current-password"
                   />
@@ -175,7 +175,7 @@ export default function LoginPage() {
                 ) : (
                   <>
                     <LogIn size={18} />
-                    Zaloguj sie
+                    Zaloguj się
                   </>
                 )}
               </button>
@@ -183,16 +183,31 @@ export default function LoginPage() {
           )}
 
           {/* Register link */}
-          <div className="mt-6 text-center">
+          <div className="mt-6 text-center space-y-3">
             <p className="text-sm text-slate-400">
               Nie masz konta?{' '}
               <Link
                 href="/register"
                 className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
               >
-                Zaloz konto
+                Załóż konto
               </Link>
             </p>
+
+            <div className="relative py-2">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/10" /></div>
+              <div className="relative flex justify-center"><span className="px-3 bg-[rgba(30,30,60,0.6)] text-xs text-slate-500">lub</span></div>
+            </div>
+
+            <button
+              onClick={() => {
+                document.cookie = 'lingua_guest=true; path=/; max-age=31536000'
+                router.push('/dashboard')
+              }}
+              className="w-full py-3 rounded-xl glass text-slate-300 font-medium hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+            >
+              Kontynuuj jako gość
+            </button>
           </div>
         </div>
 
@@ -202,7 +217,7 @@ export default function LoginPage() {
             href="/"
             className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
           >
-            Powrot na strone glowna
+            Powrót na stronę główną
           </Link>
         </div>
       </motion.div>

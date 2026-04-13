@@ -18,37 +18,37 @@ import {
 const features = [
   {
     icon: Layers,
-    title: 'Fiszki z powtorkami',
-    desc: 'Algorytm spaced repetition - powtarzasz wtedy, kiedy zaczynasz zapominac',
+    title: 'Fiszki z powtórkami',
+    desc: 'Algorytm spaced repetition - powtarzasz wtedy, kiedy zaczynasz zapominać',
     color: 'from-violet-500 to-purple-600',
   },
   {
     icon: Brain,
     title: 'Interaktywne quizy',
-    desc: 'Rozne typy pytan, feedback w czasie rzeczywistym',
+    desc: 'Różne typy pytań, feedback w czasie rzeczywistym',
     color: 'from-cyan-500 to-blue-600',
   },
   {
     icon: Bot,
     title: 'AI Tutor',
-    desc: 'Osobisty nauczyciel AI - rozmowy, gramatyka, cwiczenia',
+    desc: 'Osobisty nauczyciel AI - rozmowy, gramatyka, ćwiczenia',
     color: 'from-purple-500 to-pink-600',
   },
   {
     icon: BookMarked,
-    title: 'Darmowy slownik',
-    desc: 'Definicje, wymowa, przyklady i synonimy - zero kosztow',
+    title: 'Darmowy słownik',
+    desc: 'Definicje, wymowa, przykłady i synonimy - zero kosztów',
     color: 'from-amber-500 to-orange-600',
   },
   {
     icon: Volume2,
     title: 'Wymowa',
-    desc: 'Sluchaj jak wymawiac slowa - wbudowany text-to-speech',
+    desc: 'Słuchaj jak wymawiać słowa - wbudowany text-to-speech',
     color: 'from-emerald-500 to-green-600',
   },
   {
     icon: TrendingUp,
-    title: 'Sledzenie postepu',
+    title: 'Śledzenie postępu',
     desc: 'XP, poziomy, serie dni - motywacja do codziennej nauki',
     color: 'from-orange-500 to-red-600',
   },
@@ -85,7 +85,7 @@ export default function LandingPage() {
           href="/login"
           className="px-5 py-2.5 rounded-xl glass text-sm font-medium text-slate-300 hover:text-white transition-colors"
         >
-          Zaloguj sie
+          Zaloguj się
         </Link>
       </nav>
 
@@ -98,18 +98,18 @@ export default function LandingPage() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-brand-300 mb-8">
             <Sparkles size={16} />
-            Angielski B2 + Hiszpanski od zera
+            Angielski B2 + Hiszpański od zera
           </div>
 
           <h1 className="text-5xl sm:text-7xl font-black mb-6 leading-tight">
-            Naucz sie
+            Naucz się
             <br />
-            <span className="gradient-text">jezykow obcych</span>
+            <span className="gradient-text">języków obcych</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             Fiszki z inteligentnym algorytmem powtórek, quizy, wymowa
-            i sledzenie postepu. Wszystko czego potrzebujesz w jednej appce.
+            i śledzenie postępu. Wszystko czego potrzebujesz w jednej appce.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -117,7 +117,7 @@ export default function LandingPage() {
               href="/register"
               className="group px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-500 to-brand-600 text-white font-bold text-lg hover:from-brand-600 hover:to-brand-700 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
             >
-              Zacznij nauke
+              Zacznij naukę
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
@@ -125,7 +125,7 @@ export default function LandingPage() {
               className="px-8 py-4 rounded-2xl glass text-slate-300 font-bold text-lg hover:text-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <BookOpen size={20} />
-              Przegladaj slowka
+              Przeglądaj słówka
             </Link>
           </div>
         </motion.div>
@@ -141,14 +141,14 @@ export default function LandingPage() {
             <span className="text-3xl">🇬🇧</span>
             <div className="text-left">
               <p className="font-bold text-white">Angielski</p>
-              <p className="text-xs text-slate-400">Poziom B2 - 160 slow + OZE</p>
+              <p className="text-xs text-slate-400">Poziom B2 - 160 słów + OZE</p>
             </div>
           </div>
           <div className="glass rounded-2xl px-6 py-3 flex items-center gap-3">
             <span className="text-3xl">🇪🇸</span>
             <div className="text-left">
-              <p className="font-bold text-white">Hiszpanski</p>
-              <p className="text-xs text-slate-400">Od zera - 150 slow</p>
+              <p className="font-bold text-white">Hiszpański</p>
+              <p className="text-xs text-slate-400">Od zera - 150 słów</p>
             </div>
           </div>
         </motion.div>
@@ -199,7 +199,7 @@ export default function LandingPage() {
             Gotowy na wyzwanie?
           </h2>
           <p className="text-slate-400 mb-8 max-w-lg mx-auto">
-            Zacznij dzisiaj i zbuduj seri codziennej nauki.
+            Zacznij dzisiaj i zbuduj serię codziennej nauki.
             Wystarczy 5 minut dziennie!
           </p>
           <Link
@@ -213,7 +213,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="relative z-10 text-center py-8 text-sm text-slate-600">
-        LinguaApp &copy; 2025 &mdash; Zbudowane z pasja do nauki jezykow
+        LinguaApp &copy; 2025 &mdash; Zbudowane z pasją do nauki języków
       </footer>
     </div>
   )

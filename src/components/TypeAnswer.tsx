@@ -148,7 +148,7 @@ export default function TypeAnswer({
             animate={{ opacity: 1 }}
             className="text-center text-sm text-red-400 mt-2"
           >
-            Spróbuj jeszcze raz! ({3 - attempts} {3 - attempts === 1 ? 'proba' : 'proby'})
+            Spróbuj jeszcze raz! ({3 - attempts} {3 - attempts === 1 ? 'próba' : 'próby'})
           </motion.p>
         )}
 

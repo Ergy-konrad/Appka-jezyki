@@ -20,8 +20,8 @@ export default function RegisterPage() {
   const supabase = createClient()
 
   const passwordChecks = [
-    { label: 'Min. 6 znakow', valid: password.length >= 6 },
-    { label: 'Hasla sa takie same', valid: password.length > 0 && password === confirmPassword },
+    { label: 'Min. 6 znaków', valid: password.length >= 6 },
+    { label: 'Hasła są takie same', valid: password.length > 0 && password === confirmPassword },
   ]
 
   const handleRegister = async (e: React.FormEvent) => {
@@ -30,17 +30,17 @@ export default function RegisterPage() {
     setSuccess('')
 
     if (!email.trim() || !password.trim() || !confirmPassword.trim()) {
-      setError('Wypelnij wszystkie pola.')
+      setError('Wypełnij wszystkie pola.')
       return
     }
 
     if (password.length < 6) {
-      setError('Haslo musi miec co najmniej 6 znakow.')
+      setError('Hasło musi mieć co najmniej 6 znaków.')
       return
     }
 
     if (password !== confirmPassword) {
-      setError('Hasla nie sa takie same.')
+      setError('Hasła nie są takie same.')
       return
     }
 
@@ -54,22 +54,22 @@ export default function RegisterPage() {
 
       if (authError) {
         if (authError.message.includes('already registered')) {
-          setError('Ten email jest juz zarejestrowany. Sprobuj sie zalogowac.')
+          setError('Ten email jest już zarejestrowany. Spróbuj się zalogować.')
         } else if (authError.message.includes('valid email')) {
-          setError('Podaj prawidlowy adres email.')
+          setError('Podaj prawidłowy adres email.')
         } else {
           setError(authError.message)
         }
         return
       }
 
-      setSuccess('Konto utworzone! Sprawdz skrzynke email, aby potwierdzic rejestracje.')
+      setSuccess('Konto utworzone! Sprawdź skrzynkę email, aby potwierdzić rejestrację.')
 
       setTimeout(() => {
         router.push('/dashboard')
       }, 2000)
     } catch {
-      setError('Cos poszlo nie tak. Sprobuj ponownie.')
+      setError('Coś poszło nie tak. Spróbuj ponownie.')
     } finally {
       setLoading(false)
     }
@@ -100,8 +100,8 @@ export default function RegisterPage() {
         {/* Card */}
         <div className="glass rounded-2xl p-8 glow">
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-white mb-2">Stworz konto</h1>
-            <p className="text-slate-400 text-sm">Dolacz i zacznij nauke jezykow</p>
+            <h1 className="text-2xl font-bold text-white mb-2">Stwórz konto</h1>
+            <p className="text-slate-400 text-sm">Dołącz i zacznij naukę języków</p>
           </div>
 
           {/* Guest mode banner */}
@@ -114,14 +114,14 @@ export default function RegisterPage() {
               <div className="flex items-center gap-3 mb-3">
                 <WifiOff size={20} className="text-amber-400 shrink-0" />
                 <p className="text-sm text-amber-300 font-medium">
-                  Tryb goscia - dane zapisywane lokalnie
+                  Tryb gościa - dane zapisywane lokalnie
                 </p>
               </div>
               <button
                 onClick={() => router.push('/dashboard')}
                 className="w-full py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 hover:scale-[1.02]"
               >
-                Przejdz do aplikacji
+                Przejdź do aplikacji
               </button>
             </motion.div>
           )}
@@ -175,7 +175,7 @@ export default function RegisterPage() {
               {/* Password */}
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
-                  Haslo
+                  Hasło
                 </label>
                 <div className="relative">
                   <Lock size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
@@ -184,7 +184,7 @@ export default function RegisterPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Min. 6 znakow"
+                    placeholder="Min. 6 znaków"
                     className="w-full pl-11 pr-12 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/30 transition-all"
                     autoComplete="new-password"
                   />
@@ -201,7 +201,7 @@ export default function RegisterPage() {
               {/* Confirm Password */}
               <div>
                 <label htmlFor="confirmPassword" className="block text-sm font-medium text-slate-300 mb-2">
-                  Powtorz haslo
+                  Powtórz hasło
                 </label>
                 <div className="relative">
                   <Lock size={18} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
@@ -210,7 +210,7 @@ export default function RegisterPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    placeholder="Powtorz haslo"
+                    placeholder="Powtórz hasło"
                     className="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/50 focus:ring-1 focus:ring-brand-500/30 transition-all"
                     autoComplete="new-password"
                   />
@@ -258,7 +258,7 @@ export default function RegisterPage() {
                 ) : (
                   <>
                     <UserPlus size={18} />
-                    Zaloz konto
+                    Załóż konto
                   </>
                 )}
               </button>
@@ -268,12 +268,12 @@ export default function RegisterPage() {
           {/* Login link */}
           <div className="mt-6 text-center">
             <p className="text-sm text-slate-400">
-              Masz juz konto?{' '}
+              Masz już konto?{' '}
               <Link
                 href="/login"
                 className="text-brand-400 hover:text-brand-300 font-medium transition-colors"
               >
-                Zaloguj sie
+                Zaloguj się
               </Link>
             </p>
           </div>
@@ -285,7 +285,7 @@ export default function RegisterPage() {
             href="/"
             className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
           >
-            Powrot na strone glowna
+            Powrót na stronę główną
           </Link>
         </div>
       </motion.div>

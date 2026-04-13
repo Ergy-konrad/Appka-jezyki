@@ -172,8 +172,8 @@ export default function ProfilePage() {
           <div className="flex items-center gap-3 mb-4">
             <span className="text-3xl">🇪🇸</span>
             <div>
-              <h3 className="font-bold text-white">Hiszpanski A1</h3>
-              <p className="text-xs text-slate-400">{esLearned} / {esTotal} slow</p>
+              <h3 className="font-bold text-white">Hiszpański A1</h3>
+              <p className="text-xs text-slate-400">{esLearned} / {esTotal} słów</p>
             </div>
           </div>
           <div className="h-3 bg-slate-800 rounded-full overflow-hidden">
@@ -199,7 +199,7 @@ export default function ProfilePage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           <div className="text-center">
             <p className="text-2xl font-bold text-white">{stats.totalXp}</p>
-            <p className="text-xs text-slate-400">Calkowite XP</p>
+            <p className="text-xs text-slate-400">Całkowite XP</p>
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold text-white">{stats.longestStreak}</p>
@@ -207,7 +207,7 @@ export default function ProfilePage() {
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold text-white">{learned}</p>
-            <p className="text-xs text-slate-400">Nauczone slowa</p>
+            <p className="text-xs text-slate-400">Nauczone słowa</p>
           </div>
           <div className="text-center">
             <p className="text-2xl font-bold text-white">{activities.length}</p>
@@ -223,7 +223,7 @@ export default function ProfilePage() {
         transition={{ delay: 0.4 }}
         className="glass rounded-2xl p-6"
       >
-        <h3 className="font-bold text-white mb-3">Aktywnosc (30 dni)</h3>
+        <h3 className="font-bold text-white mb-3">Aktywność (30 dni)</h3>
         <div className="grid grid-cols-10 gap-1.5">
           {Array.from({ length: 30 }).map((_, i) => {
             const date = new Date(Date.now() - (29 - i) * 86400000).toISOString().split('T')[0]
@@ -245,7 +245,7 @@ export default function ProfilePage() {
           {['bg-slate-800', 'bg-brand-500/30', 'bg-brand-500/50', 'bg-brand-500'].map((c, i) => (
             <div key={i} className={`w-3 h-3 rounded-sm ${c}`} />
           ))}
-          <span>Wiecej</span>
+          <span>Więcej</span>
         </div>
       </motion.div>
     </div>

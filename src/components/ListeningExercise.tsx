@@ -109,7 +109,7 @@ export default function ListeningExercise({
 
         {hint && (
           <p className="text-xs text-slate-600 mt-4">
-            Podpowiedz: {hint}
+            Podpowiedź: {hint}
           </p>
         )}
       </div>

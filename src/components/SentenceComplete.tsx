@@ -136,7 +136,7 @@ export default function SentenceComplete({
       {/* Feedback */}
       {result === 'close' && (
         <p className="text-center text-sm text-emerald-400 mb-4">
-          Prawie! Dokladna pisownia: <strong>{missingWord}</strong>
+          Prawie! Dokładna pisownia: <strong>{missingWord}</strong>
         </p>
       )}
 
@@ -164,7 +164,7 @@ export default function SentenceComplete({
           disabled={!input.trim()}
           className="w-full py-3 rounded-xl bg-brand-500 text-white font-medium hover:bg-brand-600 transition-colors disabled:opacity-30"
         >
-          Sprawdz
+          Sprawdź
         </button>
       )}
     </div>
